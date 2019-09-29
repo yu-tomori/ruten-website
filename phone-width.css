@@ -86,12 +86,12 @@ header {
     padding-top: 100px;
 }
 
-#modal-menu-wrapper a, #modal-menu-wrapper p {
-    display: inline;
-    margin: 0;
+#modal-menu-wrapper a {
+    display: block;
+    margin-bottom: 10px;
     padding: 0;
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-weight: bold;
     color: white;
     
@@ -132,13 +132,16 @@ header {
 }
 
 #header-image {
+    width: 100vw;
+    height: 100vh;
     background-image: url('./image/main.jpg');
     background-position: 30% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
 }
 
 /* class */
@@ -158,6 +161,53 @@ header {
 #service-explanation {
     width: 75%;
     margin: auto;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+#pricing {
+    width: 75%;
+    height: 20vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+#pricing-individuals {
+    width: 48%;
+    float: left;
+}
+
+#pricing-company {
+    width: 48%;
+    float: right;
+}
+
+.membership-option {
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.membership-border {
+    width: 100%;
+    border: 1px black solid;
+}
+
+.membership-monthly {
+    font-size: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.membership-monthly span {
+    padding: 0.1vw;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#supplementary-explanation {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20vh;
     font-size: 0.5rem;
     font-weight: bold;
 }
@@ -245,26 +295,19 @@ header {
 .step-texts {
     display: inline-block;
     margin: auto;
-    width: 70%;
-    float: left;
+    width: 60%;
+    float: right;
 }
 
 .step-title {
     font-weight: bold;
 }
 
-.step-image {
-    padding-top: 4.5vh;
-}
-
 .step-container img {
-    width: 20%;
-    float: right;
+    width: 40%;
+    float: left;
 }
 
-#purchase-img {
-    width: 15%;
-}
 
 /* blog */
 #blogs-container {
@@ -290,14 +333,6 @@ header {
 .blog p span {
     background-color: white;
     padding: 3px 5px;
-}
-
-#blog2 {
-    display: none;
-}
-
-#blog3 {
-    display: none;
 }
 
 /* contact */
@@ -371,7 +406,46 @@ header {
     color: white;
 }
 
+/* faq */
+#faqs-wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.faq-wrapper {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.faq-wrapper button{
+    background-color: transparent;
+    border: none;
+}
+
+.faq-text {
+    display: inline;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.faq-wrapper img {
+    position: relative;
+    display: inline;
+    height: 0.5rem;
+    width: 0.5rem;
+    top: 0.2rem;
+}
+
+.faq-a {
+    font-size: 0.4rem;
+}
+
 /* footer */
+footer {
+    margin-top: 200px;
+}
+
 #footer-container {
     position: fixed;
     bottom: 30px;
@@ -379,12 +453,12 @@ header {
 }
 
 #footer-container a img {
-    width: 30px;
+    width: 50px;
 }
 
 footer p {
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     font-weight: bold;
 }
 

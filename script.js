@@ -20,7 +20,6 @@ function triggerModal(event) {
         top: 0,
         behavior: "smooth"
     });
-    event.preventDefault();
 }
 
 function scrollFunc(content) {
@@ -39,4 +38,17 @@ function scrollFunc(content) {
 function stopModal() {
     var modal = document.getElementById('header-menu-modal');
     modal.style.display = 'none';
+}
+
+function faqFunc(n) {
+    var answer = document.getElementById('faq-a-' + n);
+    var dropdownMark = answer.previousElementSibling.lastChild;
+    if (answer.style.display == 'none') {
+        answer.style.display = 'block';
+        dropdownMark.src = './icon/dropdown-icon-up-direction.png';
+    } else {
+        answer.style.display = 'none';
+        dropdownMark.src = './icon/dropdown-icon-down-direction.png';
+
+    }
 }

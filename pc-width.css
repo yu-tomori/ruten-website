@@ -23,7 +23,7 @@ header {
 }
 
 #header-logo {
-    width: 30%;
+    width: 20%;
     float: left;
 }
 
@@ -50,31 +50,36 @@ header {
     height: 60px;
     flex-grow: 11;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
     float: right;
     font-size: 2vw;
 }
 
 #header-menu div a {
+    margin: auto;
     text-decoration: none;
-    color: var(--main-text-color);
+    color: black;
+    font-size: 2vw;
     font-weight: bold;
 }
 
 #header-menu div p {
     font-size: 1vw;
     font-weight: bold;
-    margin: 0;
+    margin: auto;
 }
 
 #header-image {
+    width: 100vw;
+    height: 100vh;
     background-image: url('./image/main.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
 }
 
 #header-explanation-text {
@@ -103,6 +108,53 @@ header {
 }
 
 #service-explanation p {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+#pricing {
+    width: 60%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+#pricing-individuals {
+    width: 48%;
+    float: left;
+}
+
+#pricing-company {
+    width: 48%;
+    float: right;
+}
+
+.membership-option {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.membership-border {
+    width: 100%;
+    border: 1px black solid;
+}
+
+.membership-monthly {
+    font-size; 1.3vw;
+    font-weight: bold;
+    margin-bottom: 3vw;
+}
+
+.membership-monthly span {
+    padding: 0.1vw;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#supplementary-explanation {
+    width: 60%;
+    margin: auto;
     font-size: 1.5vw;
     font-weight: bold;
 }
@@ -198,8 +250,8 @@ header {
 .step-texts {
     display: inline-block;
     margin: auto;
-    width: 70%;
-    float: left;
+    width: 80%;
+    float: right;
 }
 
 .step-title {
@@ -209,13 +261,8 @@ header {
 .step-container img {
     display: inline-block;
     width: 20%;
-    float: right;
+    float: left;
 }
-
-#purchase-img {
-    width: 15%;
-}
-
 
 /* blogs */
 #blogs-container {
@@ -253,6 +300,7 @@ header {
     margin-bottom: 0;
     font-size: 1vw;
     font-weight: bold; 
+    text-decoration: none;
 }
 
 /* contact */
@@ -327,12 +375,49 @@ header {
     color: white;
 }
 
+/* faq */
+#faqs-wrapper {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.faq-wrapper {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.faq-wrapper button {
+    background-color: transparent;
+    border: none;
+}
+
+.faq-text {
+    display: inline;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.faq-wrapper img {
+    position: relative;
+    display: inline;
+    height: 3vh;
+    width: 3vh;
+    top: 0.5vh;
+}
+
+.faq-a {
+    font-size: 2.5vh;
+}
+
 /* footer */
 footer {
+    margin-top: 40vh;
     padding-top: 3vw;
     padding-bottom: 3vw;
 }
 
+/*
 #footer-container {
     display: flex;
     flex-direction: row;
@@ -340,6 +425,18 @@ footer {
     justify-content: space-between;
     width: 30%;
     margin: auto;
+}
+*/
+
+#footer-container {
+    position: fixed;
+    top: 60vh;
+    left: 3vw;
+}
+
+#footer-container a {
+    display: block;
+    margin-top: 2vh;
 }
 
 #footer-container a img{
