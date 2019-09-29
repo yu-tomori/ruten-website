@@ -1,0 +1,55 @@
+/* 変数の設定 */
+:root {
+    /* main color config */
+    --main-background-color: white;
+    --main-text-color: #000;
+    --main-border-color-gray: #adadad;
+    --accent-color-blue: #122b49;
+    /* contents width */
+    --pc-content-width: 80%; 
+    --phone-content-width: 87%;
+}
+
+/* 共通するCSS */
+html {
+    font-family: YakuHanJPs,Roboto,Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
+    font-size: 200%;
+    background-color: var(--main-background-color);
+}
+
+* {
+    backface-visibility: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+#header-logo-image {
+    /*animation: rotating 100s linear infinite;*/
+}
+
+@keyframes rotating{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#footer-container a img:hover {
+    transform: rotate(90deg) scale(1.5);
+}
+
+.blog {
+    transition: transform 0.1s linear;
+    overflow: hidden;
+}
+
+.blog:hover {
+    transform: scale(1.1);
+}
+
+
+
