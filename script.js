@@ -1,20 +1,17 @@
 function locationOver(locationName) {
     var loc = document.getElementById('location-' + locationName);
-    console.log(loc);
     var child = loc.firstChild.nextElementSibling;
     child.style.display = 'block';
 }
 
 function locationLeave(locationName) {
     var loc = document.getElementById('location-' + locationName);
-    console.log(loc);
     var child = loc.firstChild.nextElementSibling;
     child.style.display = 'none';
 }
 
 function triggerModal(event) {
     var modal = document.getElementById('header-menu-modal');
-    console.log(modal);
     modal.style.display = 'block';
     window.scrollTo({
         top: 0,
@@ -26,7 +23,6 @@ function scrollFunc(content) {
     var modal = document.getElementById('header-menu-modal');
     modal.style.display = 'none';
     var contentElement = document.getElementById(content);
-    console.log(contentElement);
     var domRect = contentElement.getBoundingClientRect();
     var loc = domRect.top;
     window.scrollTo({
@@ -51,4 +47,11 @@ function faqFunc(n) {
         dropdownMark.src = './icon/dropdown-icon-down-direction.png';
 
     }
+}
+
+window.onscroll = function() {
+    var header = document.getElementById('header');
+    var scroll = this.pageYOffset;
+    var opacity = scroll / 500;
+    header.style.backgroundColor = 'rgba(255,255,255,' + opacity + ')';
 }

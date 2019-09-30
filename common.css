@@ -17,10 +17,6 @@ html {
     background-color: var(--main-background-color);
 }
 
-* {
-    backface-visibility: hidden;
-}
-
 body {
     margin: 0;
 }
@@ -42,12 +38,16 @@ body {
     transform: rotate(90deg) scale(1.5);
 }
 
-.blog {
-    transition: transform 0.1s linear;
+.blog-image {
+    display: block;
     overflow: hidden;
 }
 
-.blog:hover {
+.blog img {
+    transition: transform 0.1s linear;
+}
+
+.blog img:hover {
     transform: scale(1.1);
 }
 

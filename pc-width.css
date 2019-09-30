@@ -1,10 +1,10 @@
 /*  480px~ PC・タブレット幅 */
 header {
-    height: 100px;
+    height: 150px;
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: transparent;
+    background-color: rgba(255,255,255,0);
 } 
 
 #modal-button {
@@ -74,7 +74,6 @@ header {
     height: 100vh;
     background-image: url('./image/main.jpg');
     background-position: center center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -292,15 +291,23 @@ header {
 }
 
 .blog-image {
-    width: 100%;
+    width: 27vw;
+    height: 27vw;
 }
 
 .blog p {
-    margin-left: 2vw;
-    margin-bottom: 0;
+    position: relative;
+    bottom: 10vw;
+    left: 3vw;
     font-size: 1vw;
     font-weight: bold; 
     text-decoration: none;
+    color: black;
+}
+
+.blog span {
+    background-color: white;
+    padding: 0.2vw 0.4vw;
 }
 
 /* contact */
@@ -314,6 +321,14 @@ header {
     margin-top: 7vh;
     padding-left: 10vw;
     font-weight: bold;
+}
+
+#contact-content iframe {
+    display: block;
+    width: 640px;
+    height: 1180px;
+    margin: auto;
+    margin-top: 7vh;
 }
 
 #contact-form label {

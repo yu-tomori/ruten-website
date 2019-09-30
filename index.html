@@ -11,7 +11,7 @@
     <meta property="og:url" content="http://ruteninc.com" />
     <meta property="og:title" content="Ruten株式会社" />
     <meta property="og:description" content="人生で最もクリエイティブな瞬間をデザインする多拠点型サテライトオフィス" />
-    <meta property="og:image" content="./icon/ruten-ogp-image.jpg" />
+    <meta property="og:image" content="http://ruteninc.com/icon/ruten-ogp-image.jpg" />
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Ruten株式会社ホームページ" />
     <meta property="og:locale" content="ja_JP" />
@@ -21,13 +21,14 @@
     <!-- facebook OGP config-->
     <meta property="fb:app_id" content="2329099483977244" />
 
+    <link rel="icon" href="./icon/ruten-favicon.ico">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="phone-width.css" media="screen and (max-width:1023px)">
     <link rel="stylesheet" href="pc-width.css" media="screen and (min-width:1024px)">
     <script rel="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="header-container">
             <div id="header-logo">
                 <div id="header-logo-wrap"><img id="header-logo-image" src="icon/ruten-header-logo.png"></div>
@@ -67,9 +68,9 @@
 
     <section id="header-image">
         <div id="header-explanation-text">
-            <p><span>「人々の生活と働き方に余裕を与える」</span></p>
-            <p><span>私たちは、余裕を与えることで人はクリエイティブになると信じ</span></p>
-            <p><span>忙しい現代社会の中でより多くの人に余裕を与える環境デザイン会社です。</span></p>
+            <p><span>「人々の生活と働き方の中に余裕を生み出す」</span></p>
+            <p><span>私たちは、余裕を持つことで人はクリエイティブになると信じ</span></p>
+            <p><span>忙しい現代社会の中でより多くの人が余裕を持てる環境をデザインする会社です。</span></p>
         </div>
     </section>
     <section id="service-content" class="before-title">
@@ -207,7 +208,7 @@
         <p class="sub-title">BLOG -記事-</p>
         <div id="blogs-container">
             <div class="blog" id="blog1">
-                <a href="https://note.mu/atsushi4580/n/n0ac5004d82b5" target="_blank" style="text-decoration: none;">
+                <a class="blog-image" href="https://note.mu/atsushi4580/n/n0ac5004d82b5" target="_blank" style="text-decoration: none;">
                     <img class="blog-image" src="image/atsushi.jpg">
                     <p><span>2019/06/22</span></p>
                     <p><span>僕はこの事業に人生をかける</span></p>
@@ -215,14 +216,15 @@
             </div>
           
             <div class="blog" id="blog2">
-                <a href="https://note.mu/ruten_takao/n/n606b08b4e6e5" target="_blank" style="text-decoration: none;">
-                <img class="blog-image" src="image/takao.jpg">
-                <p><span>2019/08/11</span></p>
-                <p><span>日本的な、余りに日本的な</span></p>
+                <a class="blog-image" href="https://note.mu/ruten_takao/n/n606b08b4e6e5" target="_blank" style="text-decoration: none;">
+                    <img class="blog-image" src="image/takao.jpg">
+                    <p><span>2019/08/11</span></p>
+                    <p><span>日本的な、余りに日本的な</span></p>
+                </a>
             </div>
 
             <div class="blog" id="blog3">
-                <a href="https://note.mu/bunkeiengineer/n/n37611fb9b6aa" target="_blank" style="text-decoration: none;">
+                <a class="blog-image" href="https://note.mu/bunkeiengineer/n/n37611fb9b6aa" target="_blank" style="text-decoration: none;">
                     <img class="blog-image" src="image/yu.jpg">
                     <p><span>2019/08/14</span></p>
                     <p><span>グローバル資本主義に変わる流転資本主義という概念について。</span></p>
@@ -233,7 +235,8 @@
  
     <section id="contact-content" class="before-title">
         <p class="sub-title">CONTACT -お問い合わせ-</p>
-        <form id="contact-form" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSep8t-9rp9H7BgiSXJQZHHsqkljNkdnJRd1_wW7yJ7TUFRh1A/formResponse" method="post">
+<!--
+        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep8t-9rp9H7BgiSXJQZHHsqkljNkdnJRd1_wW7yJ7TUFRh1A/viewform?usp=sf_link" method="post">
 
                  <label>姓*</label>
                  <input class="input-text" type="text" name="entry.215890176" value required />
@@ -260,8 +263,9 @@
 
                  <input id="submit-bottom" type="submit" value="送信">
              </div>
-
         </form>
+-->
+             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSep8t-9rp9H7BgiSXJQZHHsqkljNkdnJRd1_wW7yJ7TUFRh1A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
     </section>
 

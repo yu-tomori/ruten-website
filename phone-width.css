@@ -4,7 +4,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: transparent;
+    background-color: rgba(255,255,255,1);
 }
 
 #header-container {
@@ -167,7 +167,7 @@ header {
 
 #pricing {
     width: 75%;
-    height: 20vh;
+    height: 30vh;
     margin: auto;
     margin-top: 5vh;
 }
@@ -315,8 +315,13 @@ header {
     margin: auto;
 }
 
+.blog {
+    margin-bottom: 10px;
+}
+
 .blog-image {
-    width: 100%;
+    width: 94vw;
+    height: 94vw;
 }
 
 .blog p {
@@ -346,6 +351,15 @@ header {
     margin-top: 20px;
     padding-left: 45px;
     font-weight: bold;
+}
+
+#contact-content iframe {
+    display: block;
+    width: 90%;
+    height: 1180px;
+    margin: auto;
+
+
 }
 
 #contact-form label {
