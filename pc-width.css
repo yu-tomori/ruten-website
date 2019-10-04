@@ -5,6 +5,7 @@ header {
     position: fixed;
     top: 0px;
     background-color: rgba(255,255,255,0);
+    z-index: 99;
 } 
 
 #modal-button {
@@ -70,7 +71,6 @@ header {
 }
 
 #header-image {
-    width: 100vw;
     height: 100vh;
     background-image: url('./image/main.jpg');
     background-position: center center;
@@ -432,7 +432,7 @@ footer {
     padding-bottom: 3vw;
 }
 
-/*
+
 #footer-container {
     display: flex;
     flex-direction: row;
@@ -441,13 +441,7 @@ footer {
     width: 30%;
     margin: auto;
 }
-*/
 
-#footer-container {
-    position: fixed;
-    top: 60vh;
-    left: 3vw;
-}
 
 #footer-container a {
     display: block;

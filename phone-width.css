@@ -4,7 +4,8 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0);
+    z-index: 99;
 }
 
 #header-container {
@@ -69,7 +70,7 @@ header {
 
 #header-menu-modal {
     display: none;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     z-index: 9999;
     height: auto;
@@ -132,10 +133,10 @@ header {
 }
 
 #header-image {
-    width: 100vw;
     height: 100vh;
+    width; 100vw;
     background-image: url('./image/main.jpg');
-    background-position: 30% 50%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -moz-background-size: cover;
@@ -333,6 +334,7 @@ header {
     font-size: 0.5rem;
     font-weight: bold;
     color: black;
+    z-index: 1;
 }
 
 .blog p span {
@@ -461,9 +463,12 @@ footer {
 }
 
 #footer-container {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
 }
 
 #footer-container a img {
