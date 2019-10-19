@@ -8,6 +8,7 @@
     /* contents width */
     --pc-content-width: 80%; 
     --phone-content-width: 87%;
+    --hover-color: #3355ff;
 }
 
 /* 共通するCSS */
@@ -50,6 +51,4 @@ body {
 .blog img:hover {
     transform: scale(1.1);
 }
-
-
 

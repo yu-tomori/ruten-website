@@ -62,7 +62,7 @@ header {
     color: black;
     font-size: 2vw;
     font-weight: bold;
-    background-image: linear-gradient(180deg, transparent 65%, #3355ff 0);
+    background-image: linear-gradient(180deg, transparent 65%, var(--hover-color) 0);
     background-size: 0% 100%;
     background-repeat: no-repeat;
 }
@@ -317,6 +317,32 @@ header {
     background-color: white;
     padding: 0.2vw 0.4vw;
 }
+
+#more-button {
+    display: block;
+    width: 15vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    padding: 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px black solid;
+    color: black;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 65%, var(--hover-color) 0);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+#more-button:hover {
+    background-size: 100% 100%;
+    border: 2px white solid;
+    transition: background-size .4s ease;
+}
+
 
 /* contact */
 #contact-content {
