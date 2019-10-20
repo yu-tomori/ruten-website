@@ -24,10 +24,10 @@
     <meta property="fb:app_id" content="2329099483977244" />
 
     <link rel="icon" href="./icon/ruten-favicon.ico">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="phone-width.css" media="screen and (max-width:1023px)">
-    <link rel="stylesheet" href="pc-width.css" media="screen and (min-width:1024px)">
-    <script rel="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="cssfiles/common.css">
+    <link rel="stylesheet" href="cssfiles/phone-width.css" media="screen and (max-width:1023px)">
+    <link rel="stylesheet" href="cssfiles/pc-width.css" media="screen and (min-width:1024px)">
+    <script rel="text/javascript" src="jsfiles/script.js"></script>
 </head>
 <body>
     <header id="header">
@@ -36,10 +36,10 @@
                 <div id="header-logo-wrap"><img id="header-logo-image" src="icon/ruten-header-logo.png"></div>
             </div> 
             <div id="header-menu">
-                <div><a href="#service" onclick="scrollFunc('service-content')">ABOUT</a><p>-私たちについて-</p></div>
-                <div><a href="#location" onclick="scrollFunc('location-content')">SERVICE</a><p>-サービス内容-</p></div>
-                <div><a href="#steps" onclick="scrollFunc('steps-content')">NEWS</a><p>-記事-</p></div>
-                <div><a href="#blog" onclick="scrollFunc('blog-content')">MEMBER</a><p>-メンバー-</p></div>
+                <div><a href="#service" onclick="scrollFunc('about-content')">ABOUT</a><p>-私たちについて-</p></div>
+                <div><a href="#location" onclick="scrollFunc('service-content')">SERVICE</a><p>-サービス内容-</p></div>
+                <div><a href="#steps" onclick="scrollFunc('news-content')">NEWS</a><p>-ニュース-</p></div>
+                <div><a href="#blog" onclick="scrollFunc('member-content')">MEMBER</a><p>-メンバー-</p></div>
                 <div><a href="#contact" onclick="scrollFunc('contact-content')">CONTACT</a><p>-お問い合わせ-</p></div>
             </div>
             <div id="modal-button">
@@ -58,7 +58,7 @@
         <div id="modal-menu-wrapper">
             <a href="#service" onclick="scrollFunc('about-content')">ABOUT -私たちについて-</a>
             <a href="#location" onclick="scrollFunc('service-content')">SERVICE -サービス内容-</a>
-            <a href="#steps" onclick="scrollFunc('news-content')">NEWS -記事-</a>
+            <a href="#steps" onclick="scrollFunc('news-content')">NEWS -ニュース-</a>
             <a href="#blog" onclick="scrollFunc('member-content')">MEMBER -メンバー-</a>
             <a href="#contact" onclick="scrollFunc('contact-content')">CONTACT -お問い合わせ-</a>
         </div>
@@ -67,290 +67,87 @@
 
 
     <section id="header-image">
+        <p class="sub-title"></p>
+        <div></div>
     </section>
-    <section id="service-content" class="before-title">
+
+    <section id="about-content">
+        <p class="sub-title">ABOUT -私たちについて-</p>
+        <div></div>
+    </section>
+
+    <section id="service-content">
         <p class="sub-title">SERVICE -サービス内容-</p>
-        <div id="service-explanation">
-            <p>Rutenはクリエイティブな生活と環境を提供します。</p>
-            <p>魅力的な地方に点在するサテライトオフィスを定額課金制でご利用いただけます。</p>
-        </div>
-
-        <div id="pricing">
-            <div id="pricing-individuals">
-                <p class="membership-option">個人メンバー</p>
-                <div class="membership-border"></div>
-                <p class="membership-monthly">10,000円/月</p>
+        <section id="service-container">
+            <div>
+                <a href="#">
+                    <p class="service-text-wrapper">クリエイティブスペース事業 <span>></span></p>
+                    <img src='image/service-ruten.jpg' alt='Rutenロゴ'>
+                    <p class="service-explanation service-text-wrapper">仕事だけではなく、様々な用途で利用できるメンバー会員制のクリエイティブスペース事業</p>
+                </a>
             </div>
-
-            <div id="pricing-company">
-                <p class="membership-option">法人メンバー</p>
-                <div class="membership-border"></div>
-                <p class="membership-monthly"><span>10ID </span>&nbsp;50,000円/月</p>
-                <p class="membership-monthly"><span>30ID </span>&nbsp;125,000円/月</p>
+            <div>
+                 <a href="#">
+                    <p class="service-text-wrapper">インタビューメディア事業 <span>></span></p>
+                    <img src='image/service-cocho.jpg' alt='Rutenロゴ'>
+                    <p class="service-explanation service-text-wrapper">Rutenのコミュニティを発信するインタビューメディア事業</p>
+                </a>
             </div>
-        </div>
-
-        <div id="supplementary-explanation">
-            <p>*契約は1年契約からになります。</p>
-            <p>*ID数は施設を同時利用できる社員の人数です。</p>
-        </div> 
-
+            <div>
+                  <a href="#">
+                    <p class="service-text-wrapper">アートキュレーションメディア事業 <span>></span></p>
+                    <img src='image/service-mui.jpg' alt='Rutenロゴ'>
+                    <p class="service-explanation service-text-wrapper">アートを集めたキュレーションメディア事業</p>
+                </a>
+           
+            </div>
+        </section>
+        
+        </section>
     </section>
-    <section id="location-content" class="before-title">
-        <p class="sub-title">LOCATION -拠点-</p>
-        <div class="location-container">
 
-            <div class="location-background" 
-                 onmouseover="locationOver('katsura')"
-                 onmouseleave="locationLeave('katsura')"
-                 id="location-katsura">
-                <div class="location-name">
-                    <p>和歌山県那智勝浦町</p>
-                    <p>2019.11オープン!</p>
-                </div>
+    <section id="news-content" class="before-title">
+        <p class="sub-title">NEWS -ニュース-</p>
+        <div id="news-wrapper">
+            <div class="news">
+                <div class="news-date">2019.10.20</div>
+                <div class="news-category">サービス</div>
+                <div class="news-description">会社のホームページをリニューアルしました。</div>
             </div>
 
-            <div class="location-background" 
-                 onmouseover="locationOver('nantan')"
-                 onmouseleave="locationLeave('nantan')"
-                 id="location-nantan">
-                 <div class="location-name">
-                    <p>京都府南丹市</p>
-                    <p>coming soon</p>
-                </div>
+            <div class="news">
+                <div class="news-date">2019.10.18</div>
+                <div class="news-category">サービス</div>
+                <div class="news-description">インタビューメディア、Cochoを公開しました。</div>
             </div>
 
-            <div class="location-background" 
-                 onmouseover="locationOver('shiso')" 
-                 onmouseleave="locationLeave('shiso')"
-                 id="location-shiso">
-                <div class="location-name">
-                    <p>兵庫県宍粟市</p>
-                    <p>coming soon</p>
-                </div>
+            <div class="news">
+                <div class="news-date">2019.10.2</div>
+                <div class="news-category">プロモーション</div>
+                <div class="news-description">「僕のヒーローアカデミアすまっしゅ」を手掛けた漫画家の根田啓史さんにRutenのマンガを描いて頂きました。</div>
             </div>
 
-            <div class="location-background" 
-                 onmouseover="locationOver('mihara')"
-                 onmouseleave="locationLeave('mihara')"
-                 id="location-mihara">
-                <div class="location-name">
-                    <p>広島県三原市</p>
-                    <p>coming soon</p>
-                </div>
-            </div>
-            <div class="location-background" 
-                 onmouseover="locationOver('minamiaso')" 
-                 onmouseleave="locationLeave('minamiaso')"
-                 id="location-minamiaso">
-                <div class="location-name">
-                    <p>熊本県南阿蘇村</p>
-                    <p>coming soon</p>
-                </div>
+            <div class="news">
+                <div class="news-date">2019.8.23</div>
+                <div class="news-category">プロモーション</div>
+                <div class="news-description">和歌山県で発刊されている読売新聞でRutenが紹介されました。</div>
             </div>
 
-            <div class="location-background" 
-                 onmouseover="locationOver('higashiyoshino')"
-                 onmouseleave="locationLeave('higashiyoshino')"
-                 id="location-higashiyoshino">
-                <div class="location-name">
-                    <p>奈良県東吉野村</p>
-                    <p>coming soon</p>
-                </div>
-            </div>
 
         </div>
     </section>
 
-    <section id="steps-content">
-        <p class="sub-title">STEPS - ご利用までの流れ -</p>
-        <div id="steps-container">
-            <div class="step-container">
-                <div class="step-texts">
-                    <p class="step-title">申し込み(Apply)</p>
-                    <p class="step-description">まずは、ページ下のお問い合わせフォームからお問い合わせください。</p>
-                </div>
-                <div class="step-image"><img src="./icon/step-apply.jpg"></div>
-            </div>
-
-            <div class="step-container">
-                <div class="step-texts">
-                    <p class="step-title">面談(Interview)</p>
-                    <p class="step-description">メールで日程調整を行なった後にビデオ会議(Rutenの説明など)を行わせていただきます。</p>
-                </div>
-                <div class="step-image"><img src="./icon/step-interview.jpg"></div>
-            </div>
-
-            <div class="step-container">
-                <div class="step-texts">
-                    <p class="step-title">支払い(Purchase)</p>
-                    <p class="step-description">利用するプランを選択していただき、指定の銀行口座に振り込んでいただきます。</p>
-                </div>
-                <div class="step-image"><img src="./icon/step-purchase.jpg" id="purchase-img"></div>
-            </div>
-
-            <div class="step-container">
-                <div class="step-texts">
-                    <p class="step-title">利用開始(Go to Ruten)</p>
-                    <p class="step-description">振込後、全てのRutenの施設がご利用いただけます。Webから拠点の情報が確認できます。</p>
-                </div>
-                <div class="step-image"><img src="./icon/step-go-to-ruten.jpg"></div>
-            </div>
-        </div>
+    <section id="member-content">
+        <p class="sub-title">MEMBER -メンバー-</p>
+        <section id="member-container">
+                
+        </section>
     </section>
 
-    <section id="blog-content" class="before-title">
-        <p class="sub-title">BLOG -記事-</p>
-        <div id="blogs-container">
-            <div class="blog" id="blog1">
-                <a class="blog-image" href="https://note.mu/atsushi4580/n/n0ac5004d82b5" target="_blank" style="text-decoration: none;">
-                    <img class="blog-image" src="image/atsushi.jpg">
-                    <p><span>2019/06/22</span></p>
-                    <p><span>僕はこの事業に人生をかける</span></p>
-                </a>
-            </div>
-          
-            <div class="blog" id="blog2">
-                <a class="blog-image" href="https://note.mu/ruten_takao/n/n606b08b4e6e5" target="_blank" style="text-decoration: none;">
-                    <img class="blog-image" src="image/takao.jpg">
-                    <p><span>2019/08/11</span></p>
-                    <p><span>日本的な、余りに日本的な</span></p>
-                </a>
-            </div>
-
-            <div class="blog" id="blog3">
-                <a class="blog-image" href="https://note.mu/bunkeiengineer/n/n37611fb9b6aa" target="_blank" style="text-decoration: none;">
-                    <img class="blog-image" src="image/yu.jpg">
-                    <p><span>2019/08/14</span></p>
-                    <p><span>グローバル資本主義に変わる流転資本主義という概念について。</span></p>
-                </a>
-            </div>
-        </div>
-        <div id="blogs-container">
-            <div class="blog" id="blog1">
-                <a class="blog-image" href="./gorosan.html" target="_blank" style="text-decoration: none;">
-                    <img class="blog-image" src="image/gorosan.jpg">
-                    <p><span>2019/10/01</span></p>
-                    <p><span>サムライが熊野でゲストハウスをはじめたワケ</span></p>
-                </a>
-            </div>
-          
-            <div class="blog" id="blog2">
-                <a class="blog-image" href="" target="_blank" style="text-decoration: none;">
-                    <img class="blog-image" src="image/coming-soon.png">
-                    <p><span></span></p>
-                    <p><span></span></p>
-                </a>
-            </div>
-
-            <div class="blog" id="blog3">
-                <a class="blog-image" href="" target="_blank" style="text-decoration: none;">
-                    <img class="blog-image" src="image/coming-soon.png">
-                    <p><span></span></p>
-                    <p><span></span></p>
-                </a>
-            </div>
-        </div>
-
-        <!--
-        <a href="./blog/" id="more-button">MORE...</a>
-        -->
-    </section>
- 
-    <section id="contact-content" class="before-title">
+    <section id="contact-content">
         <p class="sub-title">CONTACT -お問い合わせ-</p>
-<!--
-        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSep8t-9rp9H7BgiSXJQZHHsqkljNkdnJRd1_wW7yJ7TUFRh1A/viewform?usp=sf_link" method="post">
-
-                 <label>姓*</label>
-                 <input class="input-text" type="text" name="entry.215890176" value required />
-                 <div class="input-border"></div>
-
-                 <label>名*</label>
-                 <input class="input-text" type="text" name="entry.1921604556" value required />
-                 <div class="input-border"></div>
-
-                 <label>会社名</label>
-                 <input class="input-text" type="text" name="entry.2128554151" value />
-                 <div class="input-border-long"></div>
-
-                 <label>メールアドレス*</label>
-                 <input class="input-text" type="mail" name="entry.541485682" value required />
-                 <div class="input-border-long-required"></div>
-
-                 <label>電話番号*</label>
-                 <input class="input-text" type="tel" name="entry.1786828301" value required />
-                 <div class="input-border-long-required"></div>
-
-                 <label id="contact-content-label">お問い合わせ内容*</label>
-                 <textarea id="contact-content-form" name="entry.1012269098" required></textarea>
-
-                 <input id="submit-bottom" type="submit" value="送信">
-             </div>
-        </form>
--->
              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSep8t-9rp9H7BgiSXJQZHHsqkljNkdnJRd1_wW7yJ7TUFRh1A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
-    </section>
-
-    <section id="faq-content">
-        <p class="sub-title">FAQ -よくある質問-</p>
-        <div id="faqs-wrapper">
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('1')"><p class="faq-text">Q:宿泊はできますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-1" style="display:none;">現時点で宿泊施設は設けていませんが、現地の宿泊施設を紹介することはできます。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('2')"><p class="faq-text">Q:月額費以外の費用はかかりますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-2" style="display: none;">月額費以外の料金は一切かかりません。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('3')"><p class="faq-text">Q:会員登録に保証人は必要でしょうか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-3" style="display: none;">必要ありませんが、初回利用の際に本人確認できるもの(免許証や保険証)をご提示いただきます。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('4')"><p class="faq-text">Q:利用料金に含まれているサービスを教えてください。</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-4" style="display: none;">施設利用と、施設の電気・水道・ネット回線が利用可能です。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('5')"><p class="faq-text">Q:どこの拠点が利用できますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-5" style="display: none;">Rutenの全拠点を利用していただけます。好きな時に好きな場所をご利用ください。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('6')"><p class="faq-text">Q:いつから利用できますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-6" style="display: none;">利用の前に一度ビデオ面談をさせていただきます。その際に、利用開始日をご自身で決めていただき、その日から1年間利用していただけます。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('7')"><p class="faq-text">Q:途中で解約は可能でしょうか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-7" style="display: none;">利用開始日から2週間以内であれば、全額返金させていただきます。その後に解約をされる場合は残りの金額を全額お支払いただきますのでご了承ください。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('8')"><p class="faq-text">Q:法人プランの利用者とは誰をさしますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-8" style="display: none;">法人名で契約していただき、その社員の方に利用していただけます。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('9')"><p class="faq-text">Q:連続して利用できる期間に上限はありますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-9" style="display: none;">連続の利用期間に上限はございません。お気に入りの拠点ができた場合はずっとご利用いただけます。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('10')"><p class="faq-text">Q:その時点での拠点の利用者数は確認できますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-10" style="display: none;">ご連絡いただければその時点での利用者はお伝えしますが、変動する可能性がございます。</p>
-            </div>
-
-            <div class="faq-wrapper">
-                <button class="faq-q" onclick="faqFunc('11')"><p class="faq-text">Q:拠点に担当者はいますか？</p><img src="./icon/dropdown-icon-down-direction.png"></button>
-                <p class="faq-a" id="faq-a-11" style="display: none;">その地域に詳しいRutenの地域マネージャーが各拠点にいます。なんでもお尋ねください。</p>
-            </div>
-        </div>
     </section>
 
     <footer>
