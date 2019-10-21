@@ -1,161 +1,4 @@
-/* 0px~480px スマホ幅 */
-
-* {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-
-.sub-title {
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-
-/* header */
-header {
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: rgba(255,255,255,0);
-    z-index: 99;
-}
-
-#header-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: var(--phone-content-width);
-}
-
-#header-logo {
-    padding-top: 30px;
-    width: 50%;
-    float: left;
-}
-
-#header-logo-wrap {
-    display: inline;
-    padding-top: 20px;
-}
-
-#header-logo-image {
-    display: inline;
-    box-sizing: content-box;
-    height: 6vw;
-}
-
-#header-logo-text {
-    position: relative;
-    display: inline;
-    font-size: 6vw;
-    font-weight: bold;
-    padding-left: 0vw;
-}
-
-#modal-button {
-    display: inline-block;
-    padding-top: 30px;
-    float: right;
-}
-
-#modal-button button {
-    background-color: transparent;
-    border: none;
-}
-
-.line {
-    display: block;
-    width: calc(15rem/12);
-    height: calc(10rem/12);
-}
-
-.line-body {
-    display: block;
-    width: 100%;
-    height: 5px;
-    margin-bottom: 2px;
-    border: 2px black solid;
-}
-
-#header-menu {
-    display: none;
-}
-
-#header-menu-modal {
-    display: none;
-    position: fixed;
-    overflow: hidden;
-    z-index: 9999;
-    height: auto;
-    min-height: 100vh;
-    width: 100vw;
-    text-align: left;
-    background-color: black;
-    color: white;
-}
-
-#modal-menu-wrapper {
-    width: 80%;
-    margin: auto;
-    padding-top: 100px;
-}
-
-#modal-menu-wrapper a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 0;
-    text-decoration: none;
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: white;
-    background-image: linear-gradient(180deg, transparent 65%, var(--hover-color) 0);
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-}
-
-#modal-menu-wrapper a:hover {
-    background-size: 60% 100%;
-    transition: background-size .3s ease;
-}
-
-#white-x-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-}
-
-#white-x {
-    height: 20px;
-    width: 20px;
-}
-
-#header-explanation-text p {
-    margin-bottom: 20px;
-}
-
-#header-explanation-text span {
-    padding: 6px 5px;
-    background-color: white;
-}
-
-#header-image {
-    height: 100vh;
-    width; 100vw;
-    background-image: url('../image/main.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-}
+/* ruteninc.com/index.html 中身 */
 
 /* about */
 #about-wrapper {
@@ -263,86 +106,43 @@ header {
     font-size: 0.5rem;
 }
 
-
-
 /* contact */
-#contact-content {
-    margin-bottom: 100px;
+#contact-wrapper {
+    text-align: center;
 }
 
-#contact-form {
-    width: var(--phone-content-width);
-    margin: auto;
-    margin-top: 20px;
-    padding-left: 45px;
-    font-weight: bold;
+#contact-mail {
+    font-size: 1rem;
 }
 
+.fa-envelope {
+    font-size: 1rem;
+}
+
+#contact-button {
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: 2px black solid;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    transition: .25s;
+}
+
+#contact-button:hover, #contact-button:focus {
+    box-shadow: inset 8rem 0 0 0 var(--hover-color);
+    color: white;
+    border-color: white;
+}
+
+
+/* お問い合わせ(ruteninc.com/contact/index.html) */
 #contact-content iframe {
     display: block;
     width: 90%;
     height: 1180px;
     margin: auto;
-
-
-}
-
-#contact-form label {
-    font-size: 0.5rem;
-    font-weight: bold;
-}
-
-.input-text {
-    height: 0.6rem;
-    width: 50%;
-    margin-left: 4vw;
-    font-weight: bold;
-    border: none;
-}
-
-.input-border {
-    width: 50%;
-    border: 1px black solid;
-    margin-bottom: 20px;
-}
-
-.input-border-long {
-    width: 75%;
-    border: 1px black solid;
-    margin-bottom: 20px;
-}
-
-.input-border-long-required {
-    width: 75%;
-    border: 1px black solid;
-    margin-bottom: 20px;
-}
-
-#contact-content-label {
-    display: block;
-}
-
-#contact-content-form {
-    width: 75%;
-    height: 100px;
-    border: 2px black solid;
-    font-size: 0.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#submit-bottom {
-    font-size: 0.5rem;
-    font-weight: bold;
-    width: 40%;
-    padding: 0.2rem;
-    border: 2px black solid;
-}
-
-#submit-bottom:hover {
-    background-color: black;
-    border: 4px white solid;
-    color: white;
 }
 
 /* footer */

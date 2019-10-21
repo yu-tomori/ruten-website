@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('modal-button').addEventListener('click', function (e) {
+        document.getElementById('header-menu-modal').style.display = 'block';
+        preventScroll.enable();
+    }, false);
+}, false);
+
 var preventScroll = {
     x:0,
     y:0,

@@ -1,95 +1,4 @@
-/*  480px~ PC・タブレット幅 */
-* {
-    font-weight: bold;
-    font-size: 1vw;
-}
-
-.sub-title {
-margin: 0;
-padding-top: 200px;
-padding-bottom: 100px;
-text-align: center;   
-font-size: 2vw;
-}
-
-
-header {
-    height: 150px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    background-color: rgba(255,255,255,0);
-    z-index: 99;
-} 
-
-#modal-button {
-    display: none;
-}
-
-#header-menu-modal {
-    display: none;
-}
-
-#header-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    width: var(--pc-header-content-width);
-}
-
-#header-logo {
-    width: 20%;
-    float: left;
-}
-
-#header-logo-image {
-    display: inline;
-    box-sizing: content-box;
-    height: 3vw;
-    float: left;
-}
-
-#header-menu {
-    display: flex;
-    margin: 0 auto;
-    height: 60px;
-    justify-content: space-around;
-    width: 70%;
-    float: right;
-}
-
-#header-menu div a {
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
-    color: black;
-    font-size: 2vw;
-    background-image: linear-gradient(180deg, transparent 65%, var(--hover-color) 0);
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-}
-
-#header-menu div a:hover {
-    background-size: 100% 100%;
-    transition: background-size .3s ease;
-}
-
-#header-menu div p {
-    font-size: 1vw;
-    margin: auto;
-}
-
-#header-image {
-    height: 100vh;
-    background-image: url('../image/main.jpg');
-    background-position: center center;
-    background-attachment: fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-}
-
+/*  ruteninc.com/index.html 中身 */
 /* about */
 #about-wrapper {
     width: var(--pc-content-width);
@@ -120,7 +29,6 @@ header {
     width: 50%;
     float: right;
 }
-
 
 /* service */
 .service-text-wrapper {
@@ -207,115 +115,42 @@ header {
 }
 
 /* contact */
-#contact-content {
-    margin-bottom: 200px;
+#contact-wrapper {
+    text-align: center;
 }
 
-#contact-form {
-    width: 50%;
-    margin: auto;
-    margin-top: 7vh;
-    padding-left: 10vw;
-    font-weight: bold;
+#contact-mail {
+    font-size: 1rem;
 }
 
+.fa-envelope {
+    font-size: 1rem;
+}
+
+#contact-button {
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: 2px black solid;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    transition: .25s;
+}
+
+#contact-button:hover, #contact-button:focus {
+    box-shadow: inset 8rem 0 0 0 var(--hover-color);
+    color: white;
+    border-color: white;
+}
+
+/* お問い合わせ(ruteninc.com/contact/index.html) */
 #contact-content iframe {
     display: block;
     width: 640px;
     height: 1180px;
     margin: auto;
-    margin-top: 7vh;
-}
-
-#contact-form label {
-    font-size: 3vh;
-    font-weight: bold;
-}
-
-.input-text {
-    height: 3.3vh;
-    width: 50%;
-    margin-left: 2vw;
-    font-size: 3vh;
-    font-weight: bold;
-    border: none;
-}
-
-.input-border {
-    width: 50%;
-    border: 1px black solid;
-    margin-bottom: 2.5vh;
-}
-
-.input-border-long {
-    width: 75%;
-    border: 1px black solid;
-    margin-bottom: 2.5vh;
-}
-
-.input-border-long-required {
-    width: 75%;
-    border: 1px black solid;
-    margin-bottom: 2.5vh;
-}
-
-#contact-content-label {
-    display: block;
-}
-
-#contact-content-form {
-    width: 75%;
-    height: 13vw;
-    border: 2px black solid;
-    font-size: 4vh;
-    font-weight: bold;
-    margin-bottom: 5vh;
-}
-
-#submit-bottom {
-    font-size: 3vh;
-    font-weight: bold;
-    width: 25%;
-    padding: 1vh;
-    border: 2px black solid;
-}
-
-#submit-bottom:hover {
-    background-color: black;
-    border: 2px white solid;
-    color: white;
-}
-
-/* footer */
-footer {
-    margin-top: 40vh;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    margin-top: 20vh;
 }
 
 
-#footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 30%;
-    margin: auto;
-}
-
-
-#footer-container a {
-    display: block;
-    margin-top: 2vh;
-}
-
-#footer-container a img{
-    width: 3vw;
-}
-
-footer p {
-    text-align: center;
-    margin-top: 5vw;
-    font-size: 1vw;
-    font-weight: bold;
-}
