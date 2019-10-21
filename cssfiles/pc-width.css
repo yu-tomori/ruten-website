@@ -49,16 +49,6 @@ header {
     float: left;
 }
 
-#header-logo-text {
-    position: relative;
-    top: -1vw;
-    display: inline;
-    font-size: 4.3vw;
-    font-weight:bold;
-    padding-left: 0.6vw;
-    margin: 0;
-}
-
 #header-menu {
     display: flex;
     margin: 0 auto;
@@ -100,6 +90,38 @@ header {
     -ms-background-size: cover;
 }
 
+/* about */
+#about-wrapper {
+    width: var(--pc-content-width);
+    height: 50vh;
+    margin: auto;
+}
+
+#vision-and-mission-wrapper {
+    width: 50%;
+    float: left;
+}
+
+.vision-wrapper {
+    margin-bottom: 50px;
+}
+
+.blue-title {
+    margin: 0;
+    font-size: 2vw;
+    color: var(--sub-color-blue);
+}
+
+.vision-description {
+    font-size: 1.7vw;
+}
+
+#ruten-explanation {
+    width: 50%;
+    float: right;
+}
+
+
 /* service */
 .service-text-wrapper {
     display: block;
@@ -114,26 +136,46 @@ header {
     justify-content: space-around;
 }
 
-#service-content div {
+.services {
     width: 30%;
     height: 30vw;
     border: 2px black solid;
     border-radius: 5px;
 }
 
-#service-content div a {
+.services a {
     font-size: 1vw;
     color: black;
     text-decoration: none;
 }
 
-#service-content div img {
+.services img {
     display: block;
     width: 100%;
     margin: auto;
+    transition: transform .1s linear;
 }
 
-#service-content .service-explanation {
+.service-image-border {
+    position: relative;
+    bottom: 15px;
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    width: 0%;
+    background-color: var(--hover-color);
+}
+
+.services a:hover .service-image-border {
+    width: 100%;
+    transition: width .3s ease;
+}
+
+.services a:hover img {
+    transform: scale(1.1);
+}
+
+.services .service-explanation {
     font-size: 1vw;
     font-weight: normal;
 }
@@ -148,23 +190,20 @@ header {
 .news {
     width: 100%;
     height: 50px;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px var(--sub-color-gray) solid;
 }
 
 .news-date {
     display: inline;
-    width: 30%;
 }
 
 .news-category {
     display: inline;
-    width: 30%;
 }
 
 .news-description {
-    display: inline;
-    width: 40%;
+    display: block;
 }
 
 /* contact */

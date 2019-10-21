@@ -1,4 +1,21 @@
 /* 0px~480px スマホ幅 */
+
+* {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.sub-title {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+/* header */
 header {
     height: 100px;
     width: 100%;
@@ -118,18 +135,6 @@ header {
     width: 20px;
 }
 
-#header-explanation-text {
-    padding-top: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: var(--phone-content-width);
-    font-size: 0.5rem;
-    font-weight: bold;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-}
-
 #header-explanation-text p {
     margin-bottom: 20px;
 }
@@ -142,7 +147,7 @@ header {
 #header-image {
     height: 100vh;
     width; 100vw;
-    background-image: url('./image/main.jpg');
+    background-image: url('../image/main.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -152,226 +157,113 @@ header {
     -ms-background-size: cover;
 }
 
-/* class */
-.sub-title {
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+/* about */
+#about-wrapper {
+    width: var(--phone-content-width);
+    margin: auto;
 }
 
-.before-title {
-    margin-top: 50px;
+.vision-wrapper {
+    width: 100%;
+}
+
+.blue-title {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--sub-color-blue);
+}
+
+.vision-description {
+    font-size: 1.7rem;
+}
+
+#ruten-explanation {
+    width: 100%;
+}
+
+#ruten-explanation p {
+    font-size: 0.5rem;
 }
 
 /* service */
-#service-explanation {
-    width: 75%;
-    margin: auto;
-    font-size: 0.5rem;
-    font-weight: bold;
-}
-
-#pricing {
-    width: 75%;
-    height: 30vh;
-    margin: auto;
-    margin-top: 5vh;
-}
-
-#pricing-individuals {
-    width: 48%;
-    float: left;
-}
-
-#pricing-company {
-    width: 48%;
-    float: right;
-}
-
-.membership-option {
-    font-size: 0.5rem;
-    font-weight: bold;
-}
-
-.membership-border {
-    width: 100%;
-    border: 1px black solid;
-}
-
-.membership-monthly {
-    font-size: 0.4rem;
-    margin-bottom: 1rem;
-}
-
-.membership-monthly span {
-    padding: 0.1vw;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-}
-
-#supplementary-explanation {
-    width: 75%;
-    margin: auto;
-    margin-bottom: 20vh;
-    font-size: 0.5rem;
-    font-weight: bold;
-}
-
-/* location */
-.location-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-}
-
-.location-container .location-background {
-    width: 29vw;
-    height: 29vw;
-    margin-bottom: 1.5vw;
-}
-
-#location-katsura {
-    background-image: url('./image/location-katsura.jpg');
-}
-
-#location-nantan {
-    background-image: url('./image/location-nantan.jpg');
-}
-
-#location-shiso {
-    background-image: url('./image/location-shiso.jpg');
-}
-
-#location-mihara {
-    background-image: url('./image/location-mihara.jpg');
-}
-
-#location-minamiaso {
-    background-image: url('./image/location-minamiaso.jpg');
-}
-
-#location-higashiyoshino {
-    background-image: url('./image/location-higashiyoshino.jpg');
-}
-
-.location-background {
-    background-size: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.location-name {
-    box-sizing: border-box;
-    display: none;
-    height: 29vw;
-    width: 29vw;
-    padding-top: 11.5vw;
-    text-align: center;
-    font-size: 0.3rem;
-    background-color: black;
-    opacity: 0.7;
-    color: white;
-    z-index: 1;
-}
-
-.location-name p {
-    margin: 0;
-}
-
-/* steps */
-#steps-content {
-    /*height: 100vh;*/
-}
-
-#steps-container {
-    width: 90%;
-    margin: auto;
-    font-size: 0.5rem;
-}
-
-.step-container {
-    margin: 30px 0;
-    height: 20vh;
-}
-
-.step-texts {
-    display: inline-block;
-    margin: auto;
-    width: 60%;
-    float: right;
-}
-
-.step-title {
-    font-weight: bold;
-}
-
-.step-container img {
-    width: 40%;
-    float: left;
-}
-
-
-/* blog */
-#blogs-container {
-    width: 94%;
-    margin: auto;
-}
-
-.blog {
-    margin-bottom: 10px;
-}
-
-.blog-image {
-    width: 94vw;
-    height: 94vw;
-}
-
-.blog p {
-    position: relative;
-    width: 80%;
-    bottom: 170px;
-    left: 50px;
-    margin-bottom: 0;
-    font-size: 0.5rem;
-    font-weight: bold;
-    color: black;
-    z-index: 1;
-}
-
-.blog p span {
-    background-color: white;
-    padding: 3px 5px;
-}
-
-#more-button {
+.service-text-wrapper {
     display: block;
-    width: 30%;
-    margin: auto;
-    margin-top: 60px;
-    padding: 0.5rem;
-    font-size: 0.5rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border: 1px black solid;
-    color: black;
-    background-color: transparent;
-    background-image: linear-gradient(180deg, transparent 65%, var(--hover-color) 0);
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
+    width: 90%;
+    margin: 10px auto;
 }
 
-#more-button:hover {
-    background-size: 100% 100%;
-    border: 1px white solid;
-    transition: background-size .4s ease;
+#service-container {
+    width: var(--phone-content-width);
+    margin: auto; 
 }
+
+.services {
+    width: 100%;
+    height: 550px;
+    margin: 20px 0;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+.services a {
+    color: black;
+    text-decoration: none;
+}
+
+.services img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    transition: transform .1s linear;
+}
+
+.service-image-border {
+    position: relative;
+    bottom: 15px;
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    width: 0%;
+    background-color: var(--hover-color);
+}
+
+.services a:hover .service-image-border {
+    width: 100%;
+    transition: width .3 ease;
+}
+
+.services a:hover img {
+    transform: scale(1.1);
+}
+
+.services .service-explanation {
+    font-size: 0.5rem;
+    font-weight: normal; 
+}
+
+/* news */
+#news-wrapper {
+    width: var(--phone-content-width);
+    margin: auto;
+    border-top: 2px var(--sub-color-blue) solid;
+}
+
+.news {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px var(--sub-color-gray) solid;
+}
+
+.news-date, .news-category {
+    display: inline;
+    font-size: 0.5rem;
+}
+
+.news-description {
+    font-size: 0.5rem;
+}
+
+
 
 /* contact */
 #contact-content {
@@ -451,41 +343,6 @@ header {
     background-color: black;
     border: 4px white solid;
     color: white;
-}
-
-/* faq */
-#faqs-wrapper {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-.faq-wrapper {
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-
-.faq-wrapper button{
-    background-color: transparent;
-    border: none;
-}
-
-.faq-text {
-    display: inline;
-    font-size: 0.5rem;
-    font-weight: bold;
-}
-
-.faq-wrapper img {
-    position: relative;
-    display: inline;
-    height: 0.5rem;
-    width: 0.5rem;
-    top: 0.2rem;
-}
-
-.faq-a {
-    font-size: 0.4rem;
 }
 
 /* footer */

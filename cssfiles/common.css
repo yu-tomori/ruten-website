@@ -23,19 +23,6 @@ body {
     margin: 0;
 }
 
-#header-logo-image {
-    /*animation: rotating 100s linear infinite;*/
-}
-
-@keyframes rotating{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 #footer-container a img:hover {
     transform: rotate(90deg) scale(1.5);
 }
