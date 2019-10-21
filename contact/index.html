@@ -35,36 +35,34 @@
     <header id="header">
         <div id="header-container">
             <div id="header-logo">
-                <div id="header-logo-wrap"><img id="header-logo-image" src="../icon/ruten-header-logo.png"></div>
+                <div id="header-logo-wrap"><a href="http://ruteninc.com/"><img id="header-logo-image" src="../icon/ruten-header-logo.png"></div>
             </div>
             <div id="header-menu">
-                <div><a href="#service" onclick="scrollFunc('about-content')">ABOUT</a><p>-私たちについて-</p></div>
-                <div><a href="#location" onclick="scrollFunc('service-content')">SERVICE</a><p>-サービス内容-</p></div>
-                <div><a href="#steps" onclick="scrollFunc('news-content')">NEWS</a><p>-ニュース-</p></div>
-                <div><a href="#blog" onclick="scrollFunc('member-content')">MEMBER</a><p>-メンバー-</p></div>
-                <div><a href="#contact" onclick="scrollFunc('contact-content')">CONTACT</a><p>-お問い合わせ-</p></div>
-            </div>
-            <div id="modal-button">
-                <button>
-                    <span class="line">
-                        <span class="line-body"></span>
-                        <span class="line-body"></span>
-                        <span class="line-body"></span>
-                    </span>
-                </button>
+                <div><a href="../index.html#about">ABOUT</a><p>-私たちについて-</p></div>
+                <div><a href="../index.html#service">SERVICE</a><p>-サービス内容-</p></div>
+                <div><a href="../index.html#news">NEWS</a><p>-ニュース-</p></div>
+                <div><a href="../index.html#member">MEMBER</a><p>-メンバー-</p></div>
+                <div><a href="../index.html#contact">CONTACT</a><p>-お問い合わせ-</p></div>
             </div>
         </div>
     </header>
 
+    <div id="modal-button">
+        <button onclick="openModalFunc()">
+           <span class="line-body"></span>
+           <span class="line-body"></span>
+           <span class="line-body"></span>
+        </button>
+    </div>
+
     <div id="header-menu-modal">
         <div id="modal-menu-wrapper">
-            <a href="../index.html" onclick="scrollFunc('about-content')">ABOUT -私たちについて-</a>
-            <a href="../index.html" onclick="scrollFunc('service-content')">SERVICE -サービス内容-</a>
-            <a href="../index.html" onclick="scrollFunc('news-content')">NEWS -ニュース-</a>
-            <a href="../index.html" onclick="scrollFunc('member-content')">MEMBER -メンバー-</a>
-            <a href="" onclick="scrollFunc('contact-content')">CONTACT -お問い合わせ-</a>
+            <a href="../index.html#about">ABOUT -私たちについて-</a>
+            <a href="../index.html#service">SERVICE -サービス内容-</a>
+            <a href="../index.html#news">NEWS -ニュース-</a>
+            <a href="../index.html#member">MEMBER -メンバー-</a>
+            <a href="../index.html#contact">CONTACT -お問い合わせ-</a>
         </div>
-        <button id="white-x-button" onclick="stopModal(event)"><img src="../image/white-x.png" id="white-x"></button>
     </div>
 
     <section id="contact-content">
@@ -72,7 +70,7 @@
     </section>
 
     <footer>
-        <div style="text-align: center;">follow us!</div>
+        <div style="text-align: center;" id="follow-text">follow us!</div>
         <div id="footer-container">
             <a href="https://www.facebook.com/ruteninc/" target="_blank"><img src="../icon/facebook.png"></a>
             <a href="https://www.instagram.com/ruteninc/?hl=ja" target="_blank"><img src="../icon/insta.png"></a>
@@ -84,4 +82,3 @@
 </body>
 </html>
 
-</body>

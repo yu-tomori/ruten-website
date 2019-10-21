@@ -2,13 +2,12 @@
 /* about */
 #about-wrapper {
     width: var(--pc-content-width);
-    height: 50vh;
     margin: auto;
 }
 
 #vision-and-mission-wrapper {
-    width: 50%;
-    float: left;
+    width: 80%;
+    margin: auto;
 }
 
 .vision-wrapper {
@@ -17,17 +16,22 @@
 
 .blue-title {
     margin: 0;
-    font-size: 2vw;
+    font-size: 2rem;
     color: var(--sub-color-blue);
 }
 
 .vision-description {
-    font-size: 1.7vw;
+    font-size: 1.7rem;
 }
 
 #ruten-explanation {
-    width: 50%;
-    float: right;
+    width: var(--pc-content-width);
+    margin: auto;
+    margin-top: 30vh;
+}
+
+#ruten-explanation p {
+    font-size: 1rem;
 }
 
 /* service */

@@ -36,7 +36,7 @@
     <header id="header">
         <div id="header-container">
             <div id="header-logo">
-                <div id="header-logo-wrap"><img id="header-logo-image" src="icon/ruten-header-logo.png"></div>
+                <div id="header-logo-wrap"><a href="http://ruteninc.com/index.html"><img id="header-logo-image" src="icon/ruten-header-logo.png"></a></div>
             </div> 
             <div id="header-menu">
                 <div><a href="#service" onclick="scrollFunc('about-content')">ABOUT</a><p>-私たちについて-</p></div>
@@ -45,17 +45,16 @@
                 <div><a href="#blog" onclick="scrollFunc('member-content')">MEMBER</a><p>-メンバー-</p></div>
                 <div><a href="#contact" onclick="scrollFunc('contact-content')">CONTACT</a><p>-お問い合わせ-</p></div>
             </div>
-            <div id="modal-button">
-                <button>
-                    <span class="line">
-                        <span class="line-body"></span>
-                        <span class="line-body"></span>
-                        <span class="line-body"></span>
-                    </span>
-                </button>
-            </div>
-        </div>
+       </div>
     </header>
+
+    <div id="modal-button">
+        <button onclick="openModalFunc()">
+           <span class="line-body"></span>
+           <span class="line-body"></span>
+           <span class="line-body"></span>
+        </button>
+    </div>
 
     <div id="header-menu-modal">
         <div id="modal-menu-wrapper">
@@ -65,7 +64,6 @@
             <a href="#blog" onclick="scrollFunc('member-content')">MEMBER -メンバー-</a>
             <a href="#contact" onclick="scrollFunc('contact-content')">CONTACT -お問い合わせ-</a>
         </div>
-        <button id="white-x-button" onclick="stopModal(event)"><img src="./image/white-x.png" id="white-x"></button>
     </div>
 
 
@@ -86,11 +84,11 @@
                 </div>
             </div>
             <div id="ruten-explanation">
-                <p>人が互いに心から支えあえる世界になって欲しいと願う人はたくさんいるが、そうならない世の中。</p><br />
-                <p>資本主義社会は金銭価値という合理で成り立ち、様々な社会問題が生じている。</p><br />
-                <p>現代は昔よりも豊かになった。</p><br />
-                <p>しかし生活や時間に余裕がない人が多く、そういった状態が人を分断し、生存戦略として個を磨く時代になった。</p><br />
-                <p>あらゆる縛りから解放され、余裕を持つことで人はより豊かになり、その先に持続可能な利他社会がある。</p><br />
+                <p>人が互いに心から支えあえる世界になって欲しいと願う人はたくさんいるが、そうならない世の中。</p>
+                <p>資本主義社会は金銭価値という合理で成り立ち、様々な社会問題が生じている。</p>
+                <p>現代は昔よりも豊かになった。</p>
+                <p>しかし生活や時間に余裕がない人が多く、そういった状態が人を分断し、生存戦略として個を磨く時代になった。</p>
+                <p>あらゆる縛りから解放され、余裕を持つことで人はより豊かになり、その先に持続可能な利他社会がある。</p>
             </div>
         </div>
     </section>
@@ -175,7 +173,7 @@
     </section>
 
     <footer>
-        <div style="text-align: center;">follow us!</div>
+        <div style="text-align: center;" id="follow-text">follow us!</div>
         <div id="footer-container">
             <a href="https://www.facebook.com/ruteninc/" target="_blank"><img src="icon/facebook.png"></a>
             <a href="https://www.instagram.com/ruteninc/?hl=ja" target="_blank"><img src="icon/insta.png"></a>

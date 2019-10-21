@@ -26,17 +26,3 @@ body {
 #footer-container a img:hover {
     transform: rotate(90deg) scale(1.5);
 }
-
-.blog-image {
-    display: block;
-    overflow: hidden;
-}
-
-.blog img {
-    transition: transform 0.1s linear;
-}
-
-.blog img:hover {
-    transform: scale(1.1);
-}
-

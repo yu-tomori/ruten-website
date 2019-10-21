@@ -1,8 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('modal-button').addEventListener('click', function (e) {
-        document.getElementById('header-menu-modal').style.display = 'block';
-        preventScroll.enable();
-    }, false);
+    if (location.hash) {
+        var hash_name = location.hash.slice(1);
+        var contentElement = document.getElementById(hash_name + '-content');
+        domRect = contentElement.getBoundingClientRect();
+        var loc = domRect.top;
+
+        window.scrollTo({
+            top: window.pageYOffset + loc - 100,
+            behavior: "smooth"
+        });
+    }
 }, false);
 
 var preventScroll = {
@@ -26,7 +33,9 @@ var preventScroll = {
 
 function scrollFunc(content) {
     var modal = document.getElementById('header-menu-modal');
-    modal.style.display = 'none';
+    var button = document.getElementById('modal-button').children[0];
+    modal.classList.remove('header-menu-open-modal');
+    button.classList.remove('open-modal');
     var contentElement = document.getElementById(content);
     var domRect = contentElement.getBoundingClientRect();
     var loc = domRect.top;
@@ -38,10 +47,18 @@ function scrollFunc(content) {
     });
 }
 
-function stopModal(event) {
-    var modal = document.getElementById('header-menu-modal');
-    modal.style.display = 'none';
-    preventScroll.disable();
+function openModalFunc() {
+    var targetElement = document.getElementById('modal-button').children[0];
+    if (targetElement.classList == '') {
+        targetElement.classList.add('open-modal');
+        document.getElementById('header-menu-modal').classList.add('header-menu-open-modal');
+        preventScroll.enable();
+    } else {
+        targetElement.classList.remove('open-modal');
+        var modal = document.getElementById('header-menu-modal');
+        modal.classList.remove('header-menu-open-modal');
+        preventScroll.disable();
+    }
 }
 
 window.onscroll = function() {
