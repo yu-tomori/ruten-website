@@ -120,21 +120,34 @@
 
 /* contact */
 #contact-wrapper {
-    text-align: center;
+    width: 50%; 
+    margin: auto;
 }
 
 #contact-mail {
-    font-size: 1rem;
+    display: inline;
+    font-size: 2vw;
+}
+
+#contact-or {
+    display: inline;
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+
+#contact-wrapper a {
+    display: inline;
+    margin-left: 2vw;
 }
 
 .fa-envelope {
-    font-size: 1rem;
+    font-size: 2vw;
 }
 
 #contact-button {
-    height: 2rem;
-    padding: 0 1rem;
-    font-size: 1rem;
+    height: 3vw;
+    padding: 0 1vw;
+    font-size: 2vw;
     border: 2px black solid;
     border-radius: 5px;
     color: black;
