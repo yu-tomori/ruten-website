@@ -1,4 +1,27 @@
 /* ruteninc.com/index.html 中身 */
+#header-image {
+    height: 100vh;
+    width: 100vw;
+//    background-image: url('../image/main.jpg');
+//    background-position: center center;
+//    background-repeat: no-repeat;
+//    background-attachment: fixed;
+//    -moz-background-size: cover;
+//    -webkit-background-size: cover;
+//    -o-background-size: cover;
+//    -ms-background-size: cover;
+}
+
+#header-image-logo-wrapper {
+    overflow: hidden;
+    width: 55vw;
+    margin-top: 40vh;
+    margin-left: 45vw;
+}
+
+#top-logo-image {
+    height: 30vh;
+}
 
 /* about */
 #about-wrapper {
@@ -119,6 +142,10 @@
     font-size: 1rem;
 }
 
+#contact-or {
+    margin-bottom: .5rem;
+}
+
 #contact-button {
     height: 2rem;
     padding: 0 1rem;
@@ -138,12 +165,22 @@
 
 
 /* お問い合わせ(ruteninc.com/contact/index.html) */
+#contact-text-wrapper {
+    width: var(--phone-content-width);
+    margin: auto;
+    margin-top: 20vh;
+}
+
+#contact-text-wrapper li {
+    font-size: 0.5rem;
+}
+
 #contact-content iframe {
     display: block;
     width: 90%;
     height: 1180px;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 5vh;
 }
 
 /* footer */

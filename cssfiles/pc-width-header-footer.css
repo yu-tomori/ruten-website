@@ -10,7 +10,7 @@
     padding-bottom: 100px;
     text-align: center;
     font-size: 2vw;
-    color: var(--sub-color-blue);
+    color: black;
 }
 
 
@@ -80,16 +80,6 @@ header {
     margin: auto;
 }
 
-#header-image {
-    height: 100vh;
-//    background-image: url('../image/main.jpg');
-//    background-position: center center;
-//      background-attachment: fixed;
-//      -moz-background-size: cover;
-//      -webkit-background-size: cover;
-//      -o-background-size: cover;
-//      -ms-background-size: cover;
-}
 
 /* footer */
 footer {
