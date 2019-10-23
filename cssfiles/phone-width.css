@@ -182,28 +182,3 @@
     margin: auto;
     margin-top: 5vh;
 }
-
-/* footer */
-footer {
-    margin-top: 200px;
-}
-
-#footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
-}
-
-#footer-container a img {
-    width: 50px;
-}
-
-footer p {
-    text-align: center;
-    font-size: 0.3rem;
-    font-weight: bold;
-}
-

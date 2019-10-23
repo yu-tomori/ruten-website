@@ -184,12 +184,20 @@
 }
 
 /* お問い合わせ(ruteninc.com/contact/index.html) */
+#contact-text-wrapper {
+    width: 640px;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+#contact-text-wrapper li {
+    font-size: 0.5rem;
+}
+
 #contact-content iframe {
     display: block;
     width: 640px;
     height: 1180px;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 5vh;
 }
-
-
