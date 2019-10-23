@@ -25,9 +25,9 @@
 
     <link rel="icon" href="../icon/ruten-favicon.ico">
     <link rel="stylesheet" href="../cssfiles/common.css">
-    <link rel="stylesheet" href="../cssfiles/phone-width.css" media="screen and (max-width:1023px)">
+    <link rel="stylesheet" href="../cssfiles/phone-width-member.css" media="screen and (max-width:1023px)">
     <link rel="stylesheet" href="../cssfiles/phone-width-header-footer.css" media="screen and (max-width:1023px)">
-    <link rel="stylesheet" href="../cssfiles/pc-width.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="../cssfiles/pc-width-member.css" media="screen and (min-width:1024px)">
     <link rel="stylesheet" href="../cssfiles/pc-width-header-footer.css" media="screen and (min-width:1024px)">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script rel="text/javascript" src="../jsfiles/script.js"></script>
@@ -61,7 +61,7 @@
             <a href="../index.html#about">ABOUT -私たちについて-</a>
             <a href="../index.html#service">SERVICE -サービス内容-</a>
             <a href="../index.html#news">NEWS -ニュース-</a>
-            <a href="">MEMBER -メンバー-</a>
+            <a href="#">MEMBER -メンバー-</a>
             <a href="../index.html#contact">CONTACT -お問い合わせ-</a>
         </div>
 
@@ -75,13 +75,95 @@
     </div>
 
     <section id="member-content">
-        <p>MEMBER</p>
+        <p id="member-title">MEMBER</p>
         <div id="member-container">
             <div class="member">
                 <div class="member-image-wrapper"><img src="../member-image/atsushi.jpg"></div>
+                <div class="member-name">Atsushi Kuraoka</div>
+                <div class="member-role">CEO/Founder</div>
+                <div class="member-more-wrapper"><button onclick="openMoreInfo(1)" style="background-color: transparent; border: none;"><i class="fas fa-comment-dots"></i></button></div>
                 <div class="member-image-border"></div>
-                <>
             </div>
+            <div class="member-more-info" id="member-info-1">
+                <div class="member-more-info-wrapper">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="member">
+               <div class="member-image-wrapper"><img src="../member-image/atsushi.jpg"></div>
+               <div class="member-name">Taufan Aldian</div>
+               <div class="member-role">UI/UX Designer</div>
+               <div class="member-more-wrapper"><button onclick="openMoreInfo(2)" style="background-color: transparent; border: none;"><i class="fas fa-comment-dots"></i></button></div>
+              <div class="member-image-border"></div>
+            </div>
+            <div class="member-more-info" id="member-info-2">
+                 <div class="member-more-info-wrapper">
+                    <p>Atsushi Kuraoka</p>
+                    <p>代表取締役</p>
+                 </div>
+            </div>
+
+            <div class="member">
+              <div class="member-image-wrapper"><img src="../member-image/takao.jpg"></div>
+              <div class="member-name">Takao Sato</div>
+              <div class="member-role">Engineer</div>
+              <div class="member-more-wrapper"><button onclick="openMoreInfo(3)" style="background-color: transparent; border: none;"><i class="fas fa-comment-dots"></i></button></div>
+             <div class="member-image-border"></div>
+            </div>
+            <div class="member-more-info" id="member-info-3">
+                <div class="member-more-info-wrapper">
+                   <p>Atsushi Kuraoka</p>
+                   <p>代表取締役</p>
+                </div> 
+            </div>
+
+
+            <div class="member">
+              <div class="member-image-wrapper"><img src="../member-image/yu.jpg"></div>
+              <div class="member-name">Yu Tomori</div>
+              <div class="member-role">Engineer/Designer</div>
+              <div class="member-more-wrapper"><button onclick="openMoreInfo(4)" style="background-color: transparent; border: none;"><i class="fas fa-comment-dots"></i></button></div>
+              <div class="member-image-border"></div>
+            </div>
+            <div class="member-more-info" id="member-info-4">
+                <div class="member-more-info-wrapper">
+                   <p>Atsushi Kuraoka</p>
+                   <p>代表取締役</p>
+                </div> 
+            </div>
+
+
+
+            <div class="member">
+              <div class="member-image-wrapper"><img src="../member-image/atsushi.jpg"></div>
+              <div class="member-name">Taichi Sugimura</div>
+              <div class="member-role">Engineer/Designer</div>
+              <div class="member-more-wrapper"><button onclick="openMoreInfo(5)" style="background-color: transparent; border: none;"><i class="fas fa-comment-dots"></i></button></div>
+              <div class="member-image-border"></div>
+            </div>
+           <div class="member-more-info" id="member-info-5">
+               <div class="member-more-info-wrapper">
+                  <p>Atsushi Kuraoka</p>
+                  <p>代表取締役</p>
+               </div> 
+           </div>
+
+
+             <div class="member">
+               <div class="member-image-wrapper"><img src="../member-image/atsushi.jpg"></div>
+               <div class="member-name">Kakugai Mima</div>
+               <div class="member-role">Creative</div>
+               <div class="member-more-wrapper"><button onclick="openMoreInfo(6)" style="background-color: transparent; border: none;"><i class="fas fa-comment-dots"></i></button></div>
+               <div class="member-image-border"></div>
+            </div>
+            <div class="member-more-info" id="member-info-6">
+               <div class="member-more-info-wrapper">
+                  <p>Atsushi Kuraoka</p>
+                  <p>代表取締役</p>
+               </div> 
+            </div>
+
         </div>
     </section>
 

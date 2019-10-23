@@ -67,3 +67,12 @@ window.onscroll = function() {
     var opacity = scroll / 500;
     header.style.backgroundColor = 'rgba(255,255,255,' + opacity + ')';
 }
+
+function openMoreInfo(num) {
+    var target = document.getElementById('member-info-' + num.toString());
+    target.classList.add('open-more-info');
+    window.scrollTo({
+        top: window.pageYOffset + 500,
+        behavior: "smooth"
+    });
+}

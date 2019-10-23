@@ -23,6 +23,3 @@ body {
     margin: 0;
 }
 
-#footer-container a img:hover {
-    transform: rotate(90deg) scale(1.5);
-}
