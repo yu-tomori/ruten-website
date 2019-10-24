@@ -94,8 +94,8 @@
     overflow: hidden;
     margin: auto;
     margin-bottom: 10vh;
-    background-color: var(--hover-color);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .open-more-info {
@@ -112,6 +112,11 @@
 }
 
 .member-more-info-wrapper {
-    width: 540px;
+    width: 100%;
     margin: auto;
+}
+
+.member-more-info-wrapper p {
+    font-size: .5rem;
+    color: black;
 }
