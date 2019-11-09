@@ -74,13 +74,13 @@
 
 #service-container {
     display: flex;
-    width: var(--pc-content-width);
+    width: 50%;
     margin: auto;
     justify-content: space-around;
 }
 
 .services {
-    width: 30%;
+    width: 22vw;
     height: 30vw;
     border: 2px black solid;
     border-radius: 5px;
@@ -176,9 +176,9 @@
 }
 
 #contact-button {
-    height: 4vw;
+    height: 3vw;
     padding: 0 2vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border: 2px black solid;
     border-radius: 5px;
     color: black;

@@ -3,7 +3,7 @@
     font-size: 0.7rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 50px;
     color: var(--sub-color-blue);
 }
@@ -156,9 +156,9 @@
 }
 
 #contact-button {
-    height: 2rem;
+    height: 1.5rem;
     padding: 0 1rem;
-    font-size: 1rem;
+    font-size: .5rem;
     border: 2px black solid;
     border-radius: 5px;
     color: black;

@@ -2,7 +2,7 @@
 #member-title {
     font-size: 2rem;
     margin-top: 30vh;
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@
     position: absolute;
     top: 530px;
     left: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
 }
 
