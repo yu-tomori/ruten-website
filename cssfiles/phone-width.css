@@ -32,6 +32,13 @@
     height: 30vh;
 }
 
+/* top */
+#ruten-top-logo {
+    width: 60vw;
+    height: 50vh;
+    margin: 18vh 20vw;
+}
+
 /* about */
 #about-wrapper {
     width: var(--phone-content-width);
