@@ -87,8 +87,8 @@
 }
 
 .member-more-info {
+    display: none;
     width: 87vw;
-    height: 0;
     overflow: hidden;
     margin: auto;
     margin-top: 0;
@@ -98,6 +98,8 @@
 }
 
 .open-more-info {
+    height: 0;
+    display: block;
     animation: open-more-info .3s linear forwards;
 }
 

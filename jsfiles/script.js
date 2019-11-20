@@ -70,6 +70,8 @@ window.onscroll = function() {
 
 function openMoreInfo(num) {
     var target = document.getElementById('member-info-' + num.toString());
+    var height = target.scrollHeight;
+    console.log(height);
     target.classList.add('open-more-info');
     window.scrollTo({
         top: window.pageYOffset + 500,
