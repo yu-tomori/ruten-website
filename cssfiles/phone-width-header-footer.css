@@ -133,7 +133,7 @@ header {
     margin-bottom: 20px;
     padding: 0;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 10vw;
     font-weight: bold;
     color: white;
     background-image: linear-gradient(180deg, transparent 65%, var(--hover-color) 0);
@@ -156,14 +156,14 @@ header {
 
 #modal-sns-container {
     display: flex;
-    width: 60%;
+    width: 50%;
     margin-left: 10%;
     margin-top: 0;
     justify-content: space-between;
 }
 
 #modal-sns-container a i {
-    font-size: 1.5rem;
+    font-size: 12vw;
     color: white;
 }
 

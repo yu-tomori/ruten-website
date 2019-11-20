@@ -151,14 +151,15 @@
 }
 
 #contact-mail {
-    font-size: 1rem;
+    font-size: .7rem;
 }
 
 .fa-envelope {
-    font-size: 1rem;
+    font-size: .7rem;
 }
 
 #contact-or {
+    font-size: .7rem;
     margin-bottom: .5rem;
 }
 
