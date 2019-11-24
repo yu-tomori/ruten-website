@@ -74,7 +74,7 @@ function openMoreInfo(num) {
     console.log(height);
     target.classList.add('open-more-info');
     window.scrollTo({
-        top: window.pageYOffset + 500,
+        top: window.pageYOffset + 200,
         behavior: "smooth"
     });
 }

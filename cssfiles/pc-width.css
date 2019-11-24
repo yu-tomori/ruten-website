@@ -222,7 +222,8 @@
     width: 640px;
     margin: auto;
     margin-top: 30vh;
-    font-size: 2rem;
+    font-size: .5rem;
+    text-align: center;
 }
 
 #contact-text-wrapper li {

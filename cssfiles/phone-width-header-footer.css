@@ -184,20 +184,20 @@ footer {
 
 #follow-text {
     font-size: .5rem;
-    margin-left: 10%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 #footer-sns-container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 40%;
-    margin-left: 10%;
+    width: 50%;
+    margin: auto;
 }
 
 #footer-sns-container a i {
-    font-size: 10vw;
+    font-size: 5vw;
     color: black;
 }
 
