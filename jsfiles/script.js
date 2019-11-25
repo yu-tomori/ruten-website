@@ -70,11 +70,17 @@ window.onscroll = function() {
 
 function openMoreInfo(num) {
     var target = document.getElementById('member-info-' + num.toString());
-    var height = target.scrollHeight;
-    console.log(height);
-    target.classList.add('open-more-info');
-    window.scrollTo({
-        top: window.pageYOffset + 200,
-        behavior: "smooth"
-    });
+    if (target.classList.contains('open-more-info') == false) {
+        target.classList.add('open-more-info');
+        window.scrollTo({
+            top: window.pageYOffset + 200,
+            behavior: "smooth"
+        });
+    } else {
+        target.classList.remove('open-more-info');
+        window.scrollTo({
+            top: window.pageYOffset - 200,
+            behavior: "smooth"
+        });
+    }
 }
