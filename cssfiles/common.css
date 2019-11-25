@@ -7,19 +7,33 @@
     --sub-color-blue: #00429b;
     --hover-color: #3355ff;
     /* contents width */
-    --pc-content-width: 70%;
+    --pc-content-width: 50%;
     --pc-header-content-width: 80%; 
     --phone-content-width: 87%;
 }
 
 /* 共通するCSS */
+@font-face {
+  font-family: "NotoSans Medium";
+  src: url("../fonts/NotoSansCJKjp-hinted/NotoSansCJKjp-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'AzoSans Medium';
+    src: url("../fonts/azo-sans-cufonfonts-webfont/AzoSansMedium.woff") format("woff");
+}
+
 html {
-    font-family: YakuHanJPs,Roboto,Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
+    font-family: 'AzoSans Medium','NotoSans Medium',YakuHanJPs,Roboto,Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
     font-size: 200%;
     background-color: var(--main-background-color);
 }
 
 body {
     margin: 0;
+}
+
+.letter-spacing-wide {
+    letter-spacing: .1rem;
 }
 

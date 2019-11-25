@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="cssfiles/pc-width.css" media="screen and (min-width:1024px)">
     <link rel="stylesheet" href="cssfiles/pc-width-header-footer.css" media="screen and (min-width:1024px)">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp_s.min.css">
     <script rel="text/javascript" src="jsfiles/script.js"></script>
 </head>
 <body>
@@ -39,11 +40,11 @@
                 <div id="header-logo-wrap"><a href="http://ruteninc.com/index.html"><img id="header-logo-image" src="icon/ruten-header-logo.png"></a></div>
             </div> 
             <div id="header-menu">
-                <div><a href="#service" onclick="scrollFunc('about-content')">ABOUT</a><p>-私たちについて-</p></div>
-                <div><a href="#location" onclick="scrollFunc('service-content')">SERVICE</a><p>-サービス内容-</p></div>
-                <div><a href="#steps" onclick="scrollFunc('news-content')">NEWS</a><p>-ニュース-</p></div>
-                <div><a href="./member/index.html">MEMBER</a><p>-メンバー-</p></div>
-                <div><a href="#contact" onclick="scrollFunc('contact-content')">CONTACT</a><p>-お問い合わせ-</p></div>
+                <div><a class="letter-spacing-wide" href="#service" onclick="scrollFunc('about-content')">ABOUT</a><p>私たちについて</p></div>
+                <div><a class="letter-spacing-wide" href="#location" onclick="scrollFunc('service-content')">SERVICE</a><p>サービス内容</p></div>
+                <div><a class="letter-spacing-wide" href="#steps" onclick="scrollFunc('news-content')">NEWS</a><p>ニュース</p></div>
+                <div><a class="letter-spacing-wide" href="./member/index.html">MEMBER</a><p>メンバー</p></div>
+                <div><a class="letter-spacing-wide" href="#contact" onclick="scrollFunc('contact-content')">CONTACT</a><p>お問い合わせ</p></div>
             </div>
        </div>
     </header>
@@ -57,7 +58,7 @@
     </div>
 
     <div id="header-menu-modal">
-        <div id="modal-menu-wrapper">
+        <div class='letter-spacing-wide' id="modal-menu-wrapper">
             <a href="#service" onclick="scrollFunc('about-content')">ABOUT</a>
             <a href="#location" onclick="scrollFunc('service-content')">SERVICE</a>
             <a href="#steps" onclick="scrollFunc('news-content')">NEWS</a>
@@ -84,28 +85,23 @@
     </section>
 
     <section id="about-content">
-        <p class="sub-title"></p>
+        <p class="sub-title letter-spacing-wide">ABOUT</p>
         <div id="about-wrapper">
-            <div id="vision-and-mission-wrapper">
-                <div class="vision-wrapper">
-                    <p class="blue-title">Mission</p>
-                    <p class="vision-description">働き方の中に余裕をデザインする</p>
-                </div>
+            <div class="vision-wrapper">
+                <p class="vision-description">働き方の中に<br />余裕をデザインする</p>
             </div>
             <div id="ruten-explanation">
-                <p>現代は昔よりも豊かになった。</p>
-                <p>しかし生活や時間に余裕がない人は未だに多く、個々人は分断され、生存戦略として個を磨く時代になった。</p>
-                <p>あらゆる縛りから解放され、余裕を持つことで人はより豊かになり、その先に持続可能な利他社会がある。</p>
+                <p>私たちは働き方の中に余裕をデザインすることで持続可能な利他社会を実現します。</p>
             </div>
         </div>
     </section>
 
     <section id="service-content">
-        <p class="sub-title">SERVICE</p>
+        <p class="sub-title letter-spacing-wide">SERVICE</p>
         <section id="service-container">
             <div class="services">
                 <a href="./ruten/">
-                    <p class="service-text-wrapper">クリエイティブスペース事業 <span>></span></p>
+                    <p class="service-text-wrapper">クリエイティブスペース事業 ></p>
                     <div style="overflow: hidden; margin: 0; padding: 0;"><img src='image/service-ruten.jpg' alt='Rutenロゴ'></div>
                     <div class="service-image-border"></div>
                     <p class="service-explanation service-text-wrapper">様々な用途で利用できるメンバー会員制のクリエイティブスペース事業</p>
@@ -113,7 +109,7 @@
             </div>
             <div class="services">
                  <a href="./cocho/">
-                    <p class="service-text-wrapper">インタビューメディア事業 <span>></span></p>
+                    <p class="service-text-wrapper">インタビューメディア事業 ></p>
                     <div style="overflow: hidden; margin: 0; padding: 0;"><img src='image/service-cocho.jpg' alt='Rutenロゴ'></div>
                     <div class="service-image-border"></div>
                     <p class="service-explanation service-text-wrapper">Rutenのコミュニティを発信するインタビューメディア事業</p>
@@ -133,7 +129,7 @@
     </section>
 
     <section id="news-content" class="before-title">
-        <p class="sub-title">NEWS</p>
+        <p class="sub-title letter-spacing-wide">NEWS</p>
         <div id="news-wrapper">
             <div class="news">
                 <div class="news-date">2019.10.20 | </div>
@@ -164,7 +160,7 @@
     </section>
 
     <section id="contact-content">
-        <p class="sub-title">CONTACT</p>
+        <p class="sub-title letter-spacing-wide">CONTACT</p>
         <div id="contact-wrapper">
             <div id="contact-mail"><i class="far fa-envelope"></i>   info@ruteninc.com</div>
             <div id="contact-or">or</div>
@@ -173,7 +169,7 @@
     </section>
 
     <footer>
-        <div id="follow-text">日々、Rutenを発信しています！</div>
+        <div id="follow-text">\ 日々、Rutenを発信しています！ /</div>
         <div id="footer-sns-container">
             <a href="https://www.facebook.com/ruteninc/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/ruteninc/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>

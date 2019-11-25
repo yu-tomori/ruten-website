@@ -23,7 +23,6 @@
 
 #service-explanation p {
     font-size: .5rem;
-    font-weight: bold;
 }
 
 #pricing {
@@ -45,7 +44,6 @@
 
 .membership-option {
     font-size: 0.5rem;
-    font-weight: bold;
 }
 
 .membership-border {
@@ -60,7 +58,6 @@
 
 .membership-monthly span {
     padding: 0.1vw;
-    font-weight: bold;
     font-size: .4rem;
     background-color: black;
     color: white;
@@ -74,7 +71,6 @@
 
 #supplementary-explanation p {
     font-size: .5rem;
-    font-weight: bold;
 }
 
 /* location */
