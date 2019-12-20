@@ -32,6 +32,16 @@
     margin: 18vh 20vw;
 }
 
+#top-image-wrapper {
+    width: var(--phone-content-width);
+    margin: auto;
+}
+
+#top-image {
+   width: 100%;
+   margin-top: 10vh; 
+}
+
 /* about */
 #about-wrapper {
     width: 70%;

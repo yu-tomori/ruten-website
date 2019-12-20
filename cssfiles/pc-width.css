@@ -49,6 +49,16 @@
     margin: 25vh 25vw;
 }
 
+#top-image-wrapper {
+    width: 100vw;
+}
+
+#top-image {
+    width: 60%;
+    margin-left: 20vw;
+    margin-top: 25vh;
+}
+
 /* about */
 #about-wrapper {
     width: var(--pc-content-width);
