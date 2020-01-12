@@ -11,6 +11,43 @@
     margin-top: 10vh;
 }
 
+/* top-image */
+#ruten-images-slider-wrapper {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 80vw;
+}
+
+#side-circles {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-top: 20vh;
+    height: 100vh;
+    width: 3vw;
+    float: left;
+}
+
+.office-image {
+    display: inline;
+    margin: 0;
+    margin-right: 7vw;
+    padding: 0;
+    padding-top: 20vh;
+    height: 42vw;
+    width: 65vw;
+    float: right;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.fadeInImage {
+    opacity: 1;
+}
+
 /* service */
 #service-explanation {
     margin: auto;

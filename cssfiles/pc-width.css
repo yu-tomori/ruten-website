@@ -153,11 +153,11 @@
     width: var(--pc-content-width);
     margin: auto;
     border-top: 2px var(--sub-color-blue) solid;
+    font-size: .5rem;
 }
 
 .news {
     width: 100%;
-    height: 50px;
     padding: 20px 0;
     border-bottom: 1px var(--sub-color-gray) solid;
 }
