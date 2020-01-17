@@ -24,29 +24,17 @@
     height: 40vh;
 }
 
-/* header-image */
-.stagger-visualizer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 17rem;
-    height: 17rem;
-    margin: 20vh auto;
-}
-
-.stagger-visualizer div {
-    width: 1rem;
-    height: 1rem;
-    border: 1px solid var(--sub-color-blue);
-    background-color: var(--sub-color-blue);
-}
-
 /* top */
 #ruten-top-logo {
-    width: 50vw;
-    height: 50vh;
-    margin: 25vh 25vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 25vw;
+    padding-top: 40vh;
+    background-color: #ffffff;
+    z-index: 9999;
 }
 
 #top-image-wrapper {

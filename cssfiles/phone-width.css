@@ -27,9 +27,15 @@
 
 /* top */
 #ruten-top-logo {
-    width: 60vw;
-    height: 50vh;
-    margin: 18vh 20vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 25vw;
+    padding-top: 40vh;
+    background-color: #ffffff;
+    z-index: 9999;
 }
 
 #top-image-wrapper {
@@ -56,8 +62,8 @@
 
 .vision-description {
     font-size: 1rem;
-    -webkit-text-stroke: calc(.1rem / 20) black;
-    text-stroke: calc(.1rem / 20) black;
+    -webkit-text-stroke: calc(.1rem / 5) black;
+    text-stroke: calc(.1rem / 5) black;
     color: transparent;
     line-height: 1.5rem;
     font-weight: bold;
