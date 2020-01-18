@@ -11,15 +11,20 @@ const svgText = anime({
 function fadeOutLogo () {
     const loadingLogo = window.document.getElementById('ruten-top-logo');
     console.log(loadingLogo);
-    // loadingLogo.animate({ transform: 'scale(0)', opacity: 0}, 500);
-    var player = loadingLogo.animate([
-        {opacity: 1},
-        {opacity: 0}
-    ], 500);
+    
+//    var player = loadingLogo.animate([
+//        {opacity: 1},
+//        {opacity: 0}
+//    ], 500);
+//
+//    player.addEventListener('finish', function () {
+//        loadingLogo.style.display = 'none';
+//    });
 
-    player.addEventListener('finish', function () {
+    loadingLogo.classList.add('fadeOutLoading');
+    window.setTimeout(function () {
         loadingLogo.style.display = 'none';
-    });
+    }, 900);
 }    
 
 

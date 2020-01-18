@@ -36,6 +36,8 @@
     padding-top: 40vh;
     background-color: #ffffff;
     z-index: 9999;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 #top-image-wrapper {
