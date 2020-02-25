@@ -52,6 +52,10 @@
 /* about */
 #about-wrapper {
     width: var(--pc-content-width);
+    height: 100%;
+    background: url(../image/ruten-explanation.jpg);
+    background-size: cover;
+    background-position: center center;
     margin: auto;
 }
 
@@ -62,22 +66,24 @@
 
 .vision-description {
     font-size: 5vw;
-    font-weight: bold;
-    -webkit-text-stroke: .5px black;
-    text-stroke: .5px black;
-    color: transparent;
+    font-weight: normal;
+    color: #000000;
     margin-top: 0;
     margin-bottom: 5vh;
+    text-align: center;
 }
 
 #ruten-explanation {
     height: 100%;
     margin: 0;
-    color: #555555;
+    color: #000000;
+    text-align: center;
 }
 
 #ruten-explanation p {
     font-size: .5rem;
+    margin-top: 1rem;
+    line-height: .7rem;
 }
 
 /* service */
