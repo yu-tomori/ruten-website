@@ -1,0 +1,107 @@
+#terms header{
+    height: 2.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    /* position: fixed; */
+}
+#terms header p{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+#terms-main{
+    background-image: url("../image/handhshake-terms-background.png");
+    width: 100%;
+    height: 40vw;
+    background-size: cover;
+    background-position-y: center;
+    /* background-color:rgba(255, 255, 255, 0.5); */
+    text-align: center;
+}
+#terms-main h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 40vw;
+}
+#terms-sub{
+    width: 100%;
+}
+#terms-sub-title h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2.5rem 0 2rem 0;
+    border-bottom: 1px solid #4a4a4a;
+}
+#terms-sub-title p{
+    padding: 3rem 0 2rem 0;
+}
+.terms-chapter h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 4rem 0 1.5rem;
+}
+.terms-chapter p, .terms-chapter ul{
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+}
+.terms-chapter ul{
+    list-style-type: disc;
+}
+#terms-sub-footer{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 3rem 1.4rem 3rem;
+}
+
+#policy header{
+    height: 2.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    /* position: fixed; */
+}
+#policy header p{
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+#policy-main{
+    background-image: url("../image/handhshake-terms-background.png");
+    width: 100%;
+    height: 40vw;
+    background-size: cover;
+    background-position-y: center;
+    /* background-color:rgba(255, 255, 255, 0.5); */
+    text-align: center;
+}
+#policy-main h1{
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 40vw;
+}
+#policy-sub{
+    width: 100%;
+}
+#policy-sub-title h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2.5rem 0 2rem 0;
+    border-bottom: 1px solid #4a4a4a;
+}
+#policy-sub-title p{
+    padding: 3rem 0 2rem 0;
+}
+.policy-chapter h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 4rem 0 1.5rem;
+}
+.policy-chapter p, .policy-chapter ul{
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+}
+.policy-chapter ul{
+    list-style-type: disc;
+}
+#policy-sub-footer{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 3rem 1.4rem 3rem;
+}
