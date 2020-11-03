@@ -1,66 +1,73 @@
+@charset "UTF-8";
 /* 変数の設定 */
 :root {
-    /* main color config */
-    --main-background-color: white;
-    --main-text-color: #000;
-    --sub-color-gray: #f2f2f2;
-    --sub-color-blue: #00429b;
-    --hover-color: #3355ff;
-    /* contents width */
-    --pc-content-width: 50%;
-    --pc-header-content-width: 80%; 
-    --phone-content-width: 87%;
-}
+  /* main color config */
+  --main-background-color: white;
+  --main-text-color: #000;
+  --sub-color-gray: #f2f2f2;
+  --sub-color-blue: #00429b;
+  --hover-color: #3355ff;
+  /* contents width */
+  --pc-content-width: 50%;
+  --pc-header-content-width: 80%;
+  --phone-content-width: 87%; }
 
 /* 共通するCSS */
 @font-face {
   font-family: "NotoSans Medium";
-  src: url("../fonts/NotoSansCJKjp-hinted/NotoSansCJKjp-Medium.otf") format("opentype");
-}
+  src: url("../fonts/NotoSansCJKjp-hinted/NotoSansCJKjp-Medium.otf") format("opentype"); }
 
 @font-face {
-    font-family: 'AzoSans Medium';
-    src: url("../fonts/azo-sans-cufonfonts-webfont/AzoSansMedium.woff") format("woff");
-}
+  font-family: 'AzoSans Medium';
+  src: url("../fonts/azo-sans-cufonfonts-webfont/AzoSansMedium.woff") format("woff"); }
 
 html {
-    font-family: 'AzoSans Medium','NotoSans Medium',YakuHanJPs,Roboto,Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
-    font-size: 32px;
-    background-color: var(--main-background-color);
-}
+  font-family: 'AzoSans Medium','NotoSans Medium',YakuHanJPs,Roboto,Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
+  font-size: 32px;
+  background-color: var(--main-background-color); }
 
 body {
-    margin: 0;
-}
+  margin: 0; }
 
 .letter-spacing-wide {
-    letter-spacing: .1rem;
-}
+  letter-spacing: .1rem; }
 
 .fadeOutLoading {
-    opacity: 0;
-}
+  opacity: 0; }
 
 #proposal-material-button {
-    position: fixed;
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 0 100px 20px rgba(0,0,0,0.2);
-    right: 20px;
-    bottom: 40px;
-    text-decoration: none;
-    background-color: #00a3ff;
-    font-size: 15px;
-    font-weight: bold;
-    z-index: 999;
-}
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.2);
+  right: 20px;
+  bottom: 40px;
+  text-decoration: none;
+  background-color: #00a3ff;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 999; }
 
 #proposal-material-button p {
-    margin: 0;
-    padding-top: 8px;
+  margin: 0;
+  padding-top: 8px;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.transparent-filter {
+  position: relative;
+  z-index: 1; }
+  .transparent-filter:after {
+    content: 'coming soon...';
     color: white;
-    text-align: center;
-    letter-spacing: 2px;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    z-index: 2; }

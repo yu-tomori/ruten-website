@@ -1,214 +1,187 @@
+@charset "UTF-8";
 /* ruteninc.com/index.html 中身 */
 .sub-title {
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 50px;
-    color: var(--sub-color-blue);
-    font-style: italic;
-}
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: var(--sub-color-blue);
+  font-style: italic; }
 
 #header-image {
-    height: 50vh;
-    width: 100vw;
-}
+  height: 50vh;
+  width: 100vw; }
 
 #header-image-logo-wrapper {
-    overflow: hidden;
-    width: 55vw;
-    margin-top: 40vh;
-    margin-left: 45vw;
-}
+  overflow: hidden;
+  width: 55vw;
+  margin-top: 40vh;
+  margin-left: 45vw; }
 
 #top-logo-image {
-    height: 30vh;
-}
+  height: 30vh; }
 
 /* top */
 #ruten-top-logo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding-left: 25vw;
-    padding-top: 40vh;
-    background-color: #ffffff;
-    z-index: 9999;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 25vw;
+  padding-top: 40vh;
+  background-color: #ffffff;
+  z-index: 9999;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
 
 #top-image-wrapper {
-    width: var(--phone-content-width);
-    margin: auto;
-}
+  width: var(--phone-content-width);
+  margin: auto; }
 
 #top-image {
-   width: 100%;
-   margin-top: 30vh; 
-}
+  width: 100%;
+  margin-top: 30vh; }
 
 /* about */
 #about-wrapper {
-    width: 100%;
-    height: 100%;
-    background: url(../image/ruten-explanation.jpg);
-    background-size: cover;
-    background-position: center center;
-}
+  width: 100%;
+  height: 100%;
+  background: url(../image/ruten-explanation.jpg);
+  background-size: cover;
+  background-position: center center; }
 
 .vision-description {
-    font-size: 1rem;
-    color: #000000;
-    line-height: 1.5rem;
-    text-align: center;
-}
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5rem;
+  text-align: center; }
 
 #ruten-explanation {
-    display: block;
-    width: var(--phone-content-width);
-    margin: auto;
-    text-align: center;
-}
+  display: block;
+  width: var(--phone-content-width);
+  margin: auto;
+  text-align: center; }
 
 #ruten-explanation p {
-    font-size: 15px;
-    margin-top: 30px;
-    line-height: 20px;
-    color: #000000;
-}
-
+  font-size: 15px;
+  margin-top: 30px;
+  line-height: 20px;
+  color: #000000; }
 
 /* service */
 .service-text-wrapper {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    font-size: .5rem;
-}
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  font-size: .5rem; }
 
 #service-container {
-    width: var(--phone-content-width);
-    margin: auto; 
-}
+  width: var(--phone-content-width);
+  margin: auto; }
 
 .services {
-    width: 100%;
-    height: 100%;
-    margin: 20px 0;
-    border: 2px black solid;
-    border-radius: 5px;
-}
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+  border: 2px black solid;
+  border-radius: 5px; }
 
 .services a {
-    color: black;
-    text-decoration: none;
-}
+  color: black;
+  text-decoration: none; }
 
 .services img {
-    display: block;
-    width: 100%;
-    margin: auto;
-    transition: transform .1s linear;
-}
+  display: block;
+  width: 100%;
+  margin: auto;
+  transition: transform .1s linear; }
 
 .service-image-border {
-    position: relative;
-    bottom: 15px;
-    margin: 0;
-    padding: 0;
-    height: 15px;
-    width: 0%;
-    background-color: var(--hover-color);
-}
+  position: relative;
+  bottom: 15px;
+  margin: 0;
+  padding: 0;
+  height: 15px;
+  width: 0%;
+  background-color: var(--hover-color); }
 
 .services a:hover .service-image-border {
-    width: 100%;
-    transition: width .3s ease;
-}
+  width: 100%;
+  transition: width .3s ease; }
 
 .services a:hover img {
-    transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
 .services .service-explanation {
-    font-size: 0.5rem;
-    font-weight: normal; 
-}
+  font-size: 0.5rem;
+  font-weight: normal; }
 
 /* news */
 #news-wrapper {
-    width: var(--phone-content-width);
-    margin: auto;
-    border-top: 2px var(--sub-color-blue) solid;
-}
+  width: var(--phone-content-width);
+  margin: auto;
+  border-top: 2px var(--sub-color-blue) solid; }
 
 .news {
-    width: 100%;
-    padding: 20px 0;
-    border-bottom: 2px var(--sub-color-gray) solid;
-}
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px var(--sub-color-gray) solid; }
 
 .news-date, .news-category {
-    display: inline;
-    font-size: 0.5rem;
-}
+  display: inline;
+  font-size: 0.5rem; }
 
 .news-description {
-    font-size: 0.5rem;
-}
+  font-size: 0.5rem; }
+
+/* company infomation*/
+#company-info-wrapper {
+  width: var(--phone-content-width);
+  font-size: 18px;
+  margin: auto; }
 
 /* contact */
 #contact-wrapper {
-    text-align: center;
-}
+  text-align: center; }
 
 #contact-mail {
-    font-size: .7rem;
-}
+  font-size: .7rem; }
 
 .fa-envelope {
-    font-size: .7rem;
-}
+  font-size: .7rem; }
 
 #contact-or {
-    font-size: .7rem;
-    margin-bottom: .5rem;
-}
+  font-size: .7rem;
+  margin-bottom: .5rem; }
 
 #contact-button {
-    height: 1.5rem;
-    padding: 0 1rem;
-    font-size: .5rem;
-    font-family: 'NotoSans Medium';
-    border: 2px black solid;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-    transition: .25s;
-}
+  height: 1.5rem;
+  padding: 0 1rem;
+  font-size: .5rem;
+  font-family: 'NotoSans Medium';
+  border: 2px black solid;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  transition: .25s; }
 
 #contact-button:hover, #contact-button:focus {
-    box-shadow: inset 8rem 0 0 0 var(--sub-color-blue);
-    color: white;
-    border-color: white;
-}
-
+  box-shadow: inset 8rem 0 0 0 var(--sub-color-blue);
+  color: white;
+  border-color: white; }
 
 /* お問い合わせ(ruteninc.com/contact/index.html) */
 #contact-text-wrapper {
-    margin: auto;
-    margin-top: 20vh;
-    font-size: .4rem;
-    text-align: center;
-}
+  margin: auto;
+  margin-top: 20vh;
+  font-size: .4rem;
+  text-align: center; }
 
 #contact-content iframe {
-    display: block;
-    width: 90%;
-    height: 1180px;
-    margin: auto;
-    margin-top: 5vh;
-}
+  display: block;
+  width: 90%;
+  height: 1180px;
+  margin: auto;
+  margin-top: 5vh; }
