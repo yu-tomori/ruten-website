@@ -156,22 +156,6 @@
   font-size: .7rem;
   margin-bottom: .5rem; }
 
-#contact-button {
-  height: 1.5rem;
-  padding: 0 1rem;
-  font-size: .5rem;
-  font-family: 'NotoSans Medium';
-  border: 2px black solid;
-  border-radius: 5px;
-  color: black;
-  background-color: white;
-  transition: .25s; }
-
-#contact-button:hover, #contact-button:focus {
-  box-shadow: inset 8rem 0 0 0 var(--sub-color-blue);
-  color: white;
-  border-color: white; }
-
 /* お問い合わせ(ruteninc.com/contact/index.html) */
 #contact-text-wrapper {
   margin: auto;
